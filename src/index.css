@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+/* Aquí puedes definir tus colores Gallerist directamente si quieres */
+@theme {
+--font-instrument: "Instrument Sans", sans-serif;
+
+  --color-gallerist-bg: #F9F9F7;
+  --color-gallerist-black: #1A1A1A;
+  --color-gallerist-grey: #666666;
+  --color-links-grey: #767676;
+
+  --spacing-link-gap: 32px;
+
+  --tracking-2: 0.02em;/*2%*/
+  --tracking-3: 0.05em;
+  --tracking-overlap: -0.11em; /* Valor clave para el choque de letras */
+  /* Definimos medidas fijas */
+  --width-canvas: 1440px;
+  --spacing-side: 110px;
+
+  
+}
+html {
+  scroll-behavior: smooth;
+  /* Opcional: añade un offset para que el scroll no tape el título con el Navbar */
+  scroll-padding-top: 0px; 
+}
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+@layer base {
+  h1, h2 {
+    /* Evita que el navegador intente ajustar el ancho de la fuente */
+    font-stretch: normal; 
+    font-variation-settings: "wdth" 100;
+  }
+}
+@layer base {
+  :root {
+    /* Valor por defecto (Móvil) */
+    --am-fine-tune: -8px; 
+  }
+
+  @media (min-width: 420px) {
+    :root { --am-fine-tune: -8px; }
+  }
+
+  @media (min-width: 880px) {
+    :root { --am-fine-tune: -10px; }
+  }
+
+  @media (min-width: 1220px) {
+    :root { --am-fine-tune: -16px; }
+  }
+
+  @media (min-width: 1440px) {
+    :root { --am-fine-tune: -20px; }
+  }
+}
+
+body {
+  font-family: var(--font-instrument);
+  background-color: var(--color-gallerist-bg);
+  color: var(--color-gallerist-black);
+  @apply antialiased;
+}
