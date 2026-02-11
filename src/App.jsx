@@ -2,21 +2,36 @@ import Header from './components/Header';
 import VisualGrid from './components/VisualGrid';
 import GridContainer from './components/GridContainer';
 import BackToTop from './components/BackToTop';
+import USAAProject from './components/USAAProject'; 
+import { Routes, Route, useLocation, Link } from 'react-router-dom';
+import { useEffect } from 'react';
+
+// Componente para que la página siempre empiece arriba al navegar
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 function App() {
   return (
     <div id="top" className="relative min-h-screen font-instrument selection:bg-black selection:text-white overflow-x-hidden">
-     {/*<VisualGrid />*/}
+      <ScrollToTop />
       <Header />
 
-      <main className="pt-32 md:pt-48 lg:pt-64 pb-4">{/*pb-32 */}
+      <Routes>
+      
+        <Route path="/" element={
+          <main className="pt-32 md:pt-48 lg:pt-64 pb-4">{/*pb-32 */}
         <GridContainer className="items-end">
-          <div className="col-span-1 md:col-span-4 lg:col-span-7 flex flex-col justify-end pb-4 lg:pb-[80px]">
-  <h2 className="text-[clamp(40px,6vw,96px)] leading-[0.9] font-normal tracking-[0.02em] lowercase">
-    crafting pixels,<br />
-    writing code.
-  </h2>
-</div>
+          <div  className="col-span-1 md:col-span-4 lg:col-span-7 flex flex-col justify-end pb-4 lg:pb-[80px]">
+            <h2 className="text-[clamp(40px,6vw,96px)] leading-[0.9] font-normal tracking-[0.02em] lowercase">
+              crafting pixels,<br />
+              writing code.
+            </h2>
+          </div>
 
          
 
@@ -28,17 +43,14 @@ function App() {
 </div>
         </GridContainer>
 
-        {/* SECCIÓN: Caja Negra Informativa original  <section className="mt-20/>*/}
+        {/* SECCIÓN: Caja Negra */}
         <section className="mt-20 bg-black w-full text-white " style={{marginTop: '0px'}}>
           <GridContainer>
-            {/* La caja ocupa las 12 columnas del grid principal */}
+           
             <div className="col-span-12 bg-black text-white py-24 md:py-32">
 
-              {/* Creamos un grid interno para alinear el texto con el layout global */}
-              {/* Usamos px-0 porque el GridContainer ya nos da el margen de 110px */}
               <div className="grid grid-cols-12 gap-6 px-0">
 
-                {/* El texto va de la columna 2 a la 11 (Deja 1 libre a cada lado) */}
                 <div className="col-start-2 col-span-10">
 
                   <p className="text-[24px] lg:text-[24px] leading-relaxed tracking-[0.05em] font-thin">
@@ -58,7 +70,7 @@ function App() {
           </GridContainer>
         </section>
 
-    {/* SECCIÓN: MY WORK ------------------------------*/}
+    {/* MY WORK ------------------------------*/}
 
       <section id="work" className="py-24 md:py-32">
         
@@ -72,47 +84,48 @@ function App() {
           </div>
         </GridContainer>
 
-        {/* CONTENEDOR DE GALERÍAS CON GAP RESPONSIVO */}
+        {/* CONTENEDOR GALERÍAS */}
         <div className="flex flex-col gap-16 md:gap-24 lg:gap-[160px]">
           
-          {/* --- PROYECTO 01 (NON) --- */}
+          {/* --- PROYECTO 01 --- */}
          <GridContainer>
             <div className="col-span-12 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 lg:gap-6 items-center group">
               
-              {/* Descripción: COL 1 a COL 3 */}
+              {/* Descripcion: COL 1 a COL 3 */}
               <div className="col-span-1 md:col-span-6 lg:col-span-3 flex flex-col gap-8 order-2 lg:order-1">
                 <div className="flex flex-col gap-3">
                   
-                  {/* Etiqueta + Línea Líder */}
+                  {/* Etiqueta y Línea */}
                   <div className="flex items-center gap-4 overflow-hidden">
                     <span className="text-[12px] font-normal uppercase tracking-[0.1em] text-[#767676] whitespace-nowrap">
-                      01 UI DESIGNER
+                      01 / UI DESIGNER
                     </span>
                     <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
                   </div>
 
-                  {/* Título: 10% Tracking, Hover en Negro */}
+                  {/* Título */}
                   <h3 className="text-[clamp(24px,2.5vw,32px)] leading-tight font-medium uppercase tracking-[0.1em] text-[#1a1a1a]">
                     USAA
                   </h3>
                 </div>
 
-                {/* Párrafo: 160% line-height (leading-relaxed) */}
+                {/* Parrafo */}
                 <p className="text-[clamp(18px,1.8vw,22px)] leading-relaxed text-[#4A4A4A] tracking-[0.1em]">
                   Achieving cross-platform UX & UI consistency through Design System, ensuring visual and functional alignment across all company’s lines of business.
                 </p>
 
-                {/* Link: Reforzado a Negro Puro con Línea total */}
-                <a href="#" 
-                  className="group/link relative inline-flex items-center text-[12px] font-normal uppercase tracking-[0.1em] text-[#888888] hover:text-[#000000] transition-colors duration-300 pb-1 w-fit">
-                  <span className="flex items-center">
-                    VIEW PROJECT
-                    <span className="ml-[8px] transform transition-transform duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1">
-                      ↗
+                
+              
+                <Link to="/work/usaa" className="group/link relative inline-flex items-center text-[12px] font-normal uppercase tracking-[0.1em] text-[#888888] hover:text-[#000000] transition-colors duration-300 pb-1 w-fit" >
+                    <span className="flex items-center">
+                      VIEW PROJECT
+                      <span className="ml-[8px] transform transition-transform duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1">
+                        ↗
+                      </span>
                     </span>
-                  </span>
-                  <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#000000] transition-all duration-300 ease-out group-hover/link:w-full" />
-                </a>
+                    {/*  hover */}
+                    <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#000000] transition-all duration-300 ease-out group-hover/link:w-full" />
+                  </Link>
               </div>
 
               {/* Espaciador: COL 4 a 5 */}
@@ -163,7 +176,7 @@ function App() {
               <div className="col-span-1 md:col-span-6 lg:col-span-3 flex flex-col gap-8 order-2">
                 <div className="flex flex-col gap-3">
                   
-                  {/* Etiqueta + Línea Líder */}
+                  {/* Etiqueta y  Línea Líder */}
                   <div className="flex items-center gap-4 overflow-hidden">
                     <span className="text-[12px] font-normal uppercase tracking-[0.1em] text-[#767676] whitespace-nowrap">
                       02 UX/UI DESIGNER & DEVELOPER
@@ -171,7 +184,7 @@ function App() {
                     <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
                   </div>
 
-                  {/* Título: 10% Tracking, Hover en Negro */}
+                  {/* Título*/}
                   <h3 className="text-[clamp(24px,2.5vw,32px)] leading-tight font-medium uppercase tracking-[0.1em] text-[#1a1a1a]">
                     GE Appliances
                   </h3>
@@ -308,7 +321,7 @@ function App() {
                   UX/UI design and development for the B2B platform, defining web visual identity and communication tone, establishing a professional and efficient digital presence.
                 </p>
                 
-                {/* Link: Negro Puro (#000000) en Hover para máxima percepción del cambio */}
+                {/* Link:  */}
                 <a href="#" 
                   className="group/link relative inline-flex items-center text-[12px] font-normal uppercase tracking-[0.1em] text-[#888888] hover:text-[#000000] transition-colors duration-300 pb-1 w-fit">
                   <span className="flex items-center">
@@ -549,7 +562,14 @@ function App() {
 
 
       </main>
-      <BackToTop /> {/* Se renderiza en todas las páginas */}
+
+        } />
+
+        {/* RUTA DEL PROYECTO */}
+        <Route path="/work/usaa" element={<USAAProject />} />
+      </Routes>
+
+      <BackToTop /> 
     </div>
   );
 }
