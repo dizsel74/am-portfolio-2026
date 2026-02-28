@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import GridContainer from './GridContainer';
+import ProjectNav from './ProjectNav';
 
 const USAAProject = () => {
   const [showFloatingBtn, setShowFloatingBtn] = useState(true);
@@ -8,10 +10,9 @@ const USAAProject = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Si la sección "Next Project" es visible, ocultamos el botón
         setShowFloatingBtn(!entry.isIntersecting);
       },
-      { threshold: 0.1 } // Se activa cuando el 10% de la sección es visible
+      { threshold: 0.1 }
     );
 
     if (nextProjectRef.current) {
@@ -23,8 +24,9 @@ const USAAProject = () => {
 
   return (
     <div className="bg-[#F9F9F9] pt-32 font-instrument selection:bg-black selection:text-white relative">
-      
-      {/* BOTÓN FLOTANTE (Lado derecho) */}
+      {/* NAV*/}
+        <ProjectNav/>
+      {/* BOTÓN FLOTANTE */}
       <button 
         className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${
           showFloatingBtn ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
@@ -38,7 +40,7 @@ const USAAProject = () => {
         <GridContainer>
           <div className="col-span-12 lg:col-span-8">
             <span className="text-[12px] uppercase tracking-[0.2em] text-[#767676] font-medium">
-              Case Study / 2022-2025
+              Case Study / Achive Consistency
             </span>
             <h1 className="text-[clamp(60px,12vw,140px)] leading-[0.85] font-normal mt-6 mb-12 tracking-[-0.04em] text-[#1a1a1a]">
               USAA
@@ -200,10 +202,6 @@ const USAAProject = () => {
                 </div>
               ))}
             </div>
-
-            <p className="mt-[60px] text-[22px] font-normal leading-[1.6] tracking-[0.1em] text-[#4A4A4A]">
-              The implementation and correct use of the <span className="text-black font-medium">Reveille Design System</span> didn't just fix a visual problem...
-            </p>
           </div>
         </GridContainer>
       </section>
@@ -215,7 +213,7 @@ const USAAProject = () => {
             <span className="text-[12px] uppercase tracking-[0.2em] text-[#767676] mb-12 block">
               Next Project
             </span>
-            <a href="/proximo-proyecto" className="group block">
+            <Link to="/work/ge" className="group block">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                 <div className="max-w-2xl">
                   <h2 className="text-[clamp(40px,8vw,90px)] font-normal leading-[1] tracking-tighter transition-all duration-700 group-hover:text-[#767676]">
@@ -234,15 +232,15 @@ const USAAProject = () => {
               <div className="mt-16 h-[1px] bg-white/10 w-full overflow-hidden">
                 <div className="h-full bg-white w-full translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-700 ease-in-out" />
               </div>
-            </a>
+            </Link>
           </div>
         </GridContainer>
       </section>
-
+      {/*6. FOOTER */}
       <footer className="py-12 bg-[#1a1a1a] border-t border-white/5">
         <GridContainer>
           <div className="col-span-12 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#555555]">
-            <span>© 2026 Portfolio</span>
+            <span>© 2026 ARTURO MENDOZA</span>
             <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-white transition-colors cursor-pointer">
               Back to top ↑
             </button>

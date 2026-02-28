@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import GridContainer from './GridContainer';
+import ProjectNav from './ProjectNav';
 
 const GEProject = () => {
   const [showFloatingBtn, setShowFloatingBtn] = useState(true);
@@ -23,7 +24,8 @@ const GEProject = () => {
 
   return (
     <div className="bg-[#F9F9F9] pt-32 font-instrument selection:bg-black selection:text-white relative">
-      
+        {/* NAV*/}
+        <ProjectNav/>
       {/* BOTÓN FLOTANTE */}
       <button 
         className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${
