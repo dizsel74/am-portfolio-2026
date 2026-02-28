@@ -107,7 +107,7 @@ function App() {
                     </div>
                     <div className="col-span-1 md:col-span-6 lg:col-span-7 lg:col-start-6 overflow-hidden order-1 lg:order-3">
                       <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
-                        <img src="src/assets/usaa_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="USAA" />
+                        <img src="public/usaa_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="USAA" />
                       </div>
                     </div>
                   </div>
@@ -118,7 +118,7 @@ function App() {
                   <div className="col-span-12 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 items-center group">
                     <div className="col-span-1 md:col-span-6 lg:col-span-7 overflow-hidden order-1">
                       <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
-                        <img src="/src/assets/GE_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="GE" />
+                        <img src="/public/usaa_1600x1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="GE" />
                       </div>
                     </div>
                     <div className="col-span-1 md:col-span-6 lg:col-span-3 lg:col-start-10 flex flex-col gap-8 order-2">
@@ -171,7 +171,7 @@ function App() {
                     </div>
                     <div className="col-span-1 md:col-span-6 lg:col-span-7 lg:col-start-6 overflow-hidden order-1 lg:order-3">
                       <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
-                        <img src="/src/assets/cafe_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="Café" />
+                        <img src="/public/cafe_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="Café" />
                       </div>
                     </div>
                   </div>
@@ -182,7 +182,7 @@ function App() {
                   <div className="col-span-12 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 items-center group">
                     <div className="col-span-1 md:col-span-6 lg:col-span-7 overflow-hidden order-1">
                       <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
-                        <img src="/src/assets/pascual_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="Pascual" />
+                        <img src="/public/pascual_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="Pascual" />
                       </div>
                     </div>
                     <div className="col-span-1 md:col-span-6 lg:col-span-3 lg:col-start-10 flex flex-col gap-8 order-2">
@@ -354,7 +354,7 @@ function App() {
 
                         {/* RESUME */}
                         <a 
-                          href="/src/assets/Arturo_Mendoza_UX-UI_RESUME.pdf" 
+                          href="/public/Arturo_Mendoza_UX-UI_RESUME.pdf" 
                           download 
                           className="group relative flex items-center gap-2 text-[12px] uppercase font-normal tracking-[0.2em] leading-[1.6] text-[#888888] hover:text-[#1a1a1a] pb-1"
                         >
