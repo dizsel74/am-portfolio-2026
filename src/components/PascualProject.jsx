@@ -43,7 +43,7 @@ const PascualProject = () => {
               Case Study / Brand Refresh
             </span>
             <h1 className="text-[clamp(60px,10vw,140px)] leading-[0.85] font-normal mt-6 mb-12 tracking-[-0.04em] text-[#1a1a1a]">
-              PASCUAL <br /> Quality Matters
+              PASCUAL 
             </h1>
           </div>
           <div className="col-span-12">
@@ -180,7 +180,7 @@ const PascualProject = () => {
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                 <div className="max-w-2xl">
                   <h2 className="text-[clamp(40px,8vw,90px)] font-normal leading-[1] tracking-tighter transition-all duration-700 group-hover:text-[#767676]">
-                    USAA<br /> Design System
+                    USAA<br />Achive Consistency
                   </h2>
                 </div>
                 <div className="pb-4">

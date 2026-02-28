@@ -179,7 +179,7 @@ const GEProject = () => {
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                 <div className="max-w-2xl">
                   <h2 className="text-[clamp(40px,8vw,90px)] font-normal leading-[1] tracking-tighter transition-all duration-700 group-hover:text-[#767676]">
-                    CAFÉ Appliances<br /> Luxury Experience
+                    CAFÉ<br /> Luxury Experience
                   </h2>
                 </div>
                 <div className="pb-4">

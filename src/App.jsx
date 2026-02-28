@@ -241,7 +241,7 @@ function App() {
 
                       {/* Párrafo 2 */}
                       <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em] ]">
-                        <span className="font-bold text-[#767676">- </span>Great design brings together the user and the business at the center and building around them with technical efficiency. <span className="font-bold text-[#767676">- </span></p>
+                        <span className="font-bold text-[#767676">—</span>Great design brings together the user and the business at the center and building around them with technical efficiency. <span className="font-bold text-[#767676">—</span></p>
                       
                         <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em]">By combining visual storytelling, data analysis, and front-end architecture knowledge, I deliver seamless enterprise and e-commerce  <span className="font-medium">solutions</span> that connect with users and scale with the business.
                       </p>
@@ -354,7 +354,7 @@ function App() {
 
                         {/* RESUME */}
                         <a 
-                          href="/path-to-your-resume.pdf" 
+                          href="/src/assets/Arturo_Mendoza_UX-UI_RESUME.pdf" 
                           download 
                           className="group relative flex items-center gap-2 text-[12px] uppercase font-normal tracking-[0.2em] leading-[1.6] text-[#888888] hover:text-[#1a1a1a] pb-1"
                         >

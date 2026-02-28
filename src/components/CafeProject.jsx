@@ -43,7 +43,7 @@ const CafeProject = () => {
               Case Study / Luxury Lifestyle
             </span>
             <h1 className="text-[clamp(60px,10vw,140px)] leading-[0.85] font-normal mt-6 mb-12 tracking-[-0.04em] text-[#1a1a1a]">
-              CAFÉ <br /> Distinct by Design
+              CAFÉ <br /> 
             </h1>
           </div>
           <div className="col-span-12">
