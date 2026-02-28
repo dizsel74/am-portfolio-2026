@@ -49,7 +49,7 @@ const USAAProject = () => {
           <div className="col-span-12">
             <div className="aspect-[16/7] bg-[#F5F5F5] overflow-hidden group">
                <img 
-                src="/public/usaa_hero.webp" 
+                src="/usaa_hero.webp" 
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
                 alt="USAA Hero" 
                />
@@ -153,7 +153,7 @@ const USAAProject = () => {
               <div key={i} className="flex flex-col gap-6">
                 <div className="aspect-square bg-white border border-[#EEEEEE] overflow-hidden transition-all duration-500 hover:border-[#CCCCCC] group">
                   <img 
-                    src={`/public/${item.fileName}`} 
+                    src={`/${item.fileName}`} 
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                   />

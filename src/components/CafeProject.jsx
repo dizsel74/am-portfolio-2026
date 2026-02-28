@@ -49,7 +49,7 @@ const CafeProject = () => {
           <div className="col-span-12">
             <div className="aspect-[16/7] bg-[#F5F5F5] overflow-hidden group">
                <img 
-                src="/public/cafe_hero.webp" 
+                src="/Cafe_hero.webp" 
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
                 alt="CAFÉ Appliances Hero" 
                />
@@ -148,7 +148,7 @@ const CafeProject = () => {
           <div className="col-span-12 mb-12">
             <div className="aspect-[21/9] bg-[#F5F5F5] overflow-hidden group">
                <img 
-                src="/public/cafe_configurator.webp" 
+                src="/cafe_configurator.webp" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
                 alt="CAFÉ Configurator" 
                />
@@ -158,10 +158,10 @@ const CafeProject = () => {
 
           <div className="col-span-12 grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="aspect-square bg-white border border-[#EEEEEE] overflow-hidden group">
-              <img src="/public/cafe_ui_2.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="CAFÉ UI" />
+              <img src="/cafe_ui_2.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="CAFÉ UI" />
             </div>
             <div className="aspect-square bg-white border border-[#EEEEEE] overflow-hidden group">
-              <img src="/public/cafe_ui_3.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="CAFÉ UI Detail" />
+              <img src="/cafe_ui_3.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="CAFÉ UI Detail" />
             </div>
           </div>
         </GridContainer>

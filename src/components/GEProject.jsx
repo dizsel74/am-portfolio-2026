@@ -49,7 +49,7 @@ const GEProject = () => {
           <div className="col-span-12">
             <div className="aspect-[16/7] bg-[#F5F5F5] overflow-hidden group">
                <img 
-                src="/public/GE_hero.webp" 
+                src="/GE_hero.webp" 
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
                 alt="GE Appliances Hero" 
                />
@@ -152,7 +152,7 @@ const GEProject = () => {
               <div key={i} className="flex flex-col gap-6">
                 <div className="aspect-[4/3] bg-white border border-[#EEEEEE] overflow-hidden group">
                   <img 
-                    src={`/public/${item.fileName}`} 
+                    src={`/${item.fileName}`} 
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                   />
