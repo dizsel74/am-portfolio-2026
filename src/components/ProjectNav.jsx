@@ -2,60 +2,58 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ProjectNav = () => {
-    const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(() => {
-        // Pequeño delay para que la transición se note después de que cargue la página
-        const timer = setTimeout(() => setIsVisible(true), 100);
-        return () => clearTimeout(timer);
-    }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
 
-    return (
-        <nav
-            className={`fixed top-0 left-0 w-full z-50 pointer-events-none transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
-                }`}
+  return (
+    <nav 
+      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
+      }`}
+    >
+      {/* CAPA DE CRISTAL TRASLÚCIDO */}
+      <div className="absolute inset-0 bg-[#F9F9F9]/20 backdrop-blur-md" />
+
+      <div className="relative max-w-[1440px] mx-auto px-6 md:px-10 py-6 md:py-10 flex justify-between items-center pointer-events-none">
+        
+        {/* LOGO AM - RÉPLICA DEL HOME EN PEQUEÑO */}
+        <Link 
+          to="/" 
+          className="pointer-events-auto group flex items-center"
         >
-            <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-8 md:py-12 flex justify-between items-center">
+          <div className="text-[24px] md:text-[28px] font-bold leading-[0.7] flex antialiased select-none text-[#1a1a1a] group-hover:text-[#888888] transition-colors duration-300">
+            {/* Mantenemos la superposición exacta de tu logo principal */}
+            <span className="relative z-10 -mr-[0.135em] block transform-gpu">A</span>
+            <span className="relative z-0 block transform-gpu">M</span>
+          </div>
+        </Link>
 
-                {/* LOGO AM */}
-                <Link
-                    to="/"
-                    className="pointer-events-auto text-[20px] font-bold tracking-tighter text-[#1a1a1a] hover:text-[#888888] transition-colors duration-300"
-                >
-                    AM
-                </Link>
+        {/* BOTÓN CLOSE */}
+        <Link 
+          to="/" 
+          className="group pointer-events-auto relative inline-flex items-center gap-1.5 pb-1"
+        >
+          <span className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] md:tracking-[0.3em] text-[#888888] group-hover:text-[#1a1a1a] transition-colors duration-300">
+            Close
+          </span>
 
-                {/* BOTÓN CLOSE - AJUSTADO */}
-                <Link
-                    to="/"
-                    className="group pointer-events-auto flex items-center gap-1.5" /* Gap reducido de 3 a 1.5 */
-                >
-                    <span className="relative text-[11px] uppercase tracking-[0.3em] text-[#888888] group-hover:text-[#1a1a1a] transition-colors duration-300">
-                        Close
-                        {/* Subrayado animado */}
-                        <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 group-hover:w-full" />
-                    </span>
+          <div className="relative w-3 h-4 flex items-center justify-center overflow-visible">
+            <span className="block text-[14px] font-light text-[#888888] group-hover:text-[#1a1a1a] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1">
+              ✕
+            </span>
+          </div>
 
-                    {/* CONTENEDOR DE LA X - MÁS ESTRECHO */}
-                    <div className="relative w-3 h-4 flex items-center justify-center overflow-visible">
-                        <span className="
-      block text-[14px] font-light
-      text-[#888888] group-hover:text-[#1a1a1a] 
-      
-   
-      transition-transform duration-400 
-      ease-[cubic-bezier(0.22,1,0.36,1)] 
-      
-      transform group-hover:-translate-y-1.5
-    ">
-                            ✕
-                        </span>
-                    </div>
-                </Link>
-
-            </div>
-        </nav>
-    );
+          {/* Subrayado unificado */}
+          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 group-hover:w-full" />
+        </Link>
+        
+      </div>
+    </nav>
+  );
 };
 
 export default ProjectNav;

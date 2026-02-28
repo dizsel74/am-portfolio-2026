@@ -92,7 +92,7 @@ const USAAProject = () => {
       </section>
 
       {/* 2. THE SOLUTION */}
-      <section className="py-32 bg-black text-gray-300">
+      <section className="py-32 bg-[#1a1a1a] text-[#888888]">
         <GridContainer>
           <div className="col-span-12 lg:col-span-4 mb-16 lg:mb-0">
             <div className="flex items-center gap-4 mb-8">
@@ -236,10 +236,10 @@ const USAAProject = () => {
           </div>
         </GridContainer>
       </section>
-      {/*6. FOOTER */}
-      <footer className="py-12 bg-[#1a1a1a] border-t border-white/5">
+      {/* 6.FOOTER */}
+     <footer className="py-12 bg-[#1a1a1a] border-t border-[#888888]/10">
         <GridContainer>
-          <div className="col-span-12 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#555555]">
+          <div className="col-span-12 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#888888]">
             <span>© 2026 ARTURO MENDOZA</span>
             <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-white transition-colors cursor-pointer">
               Back to top ↑

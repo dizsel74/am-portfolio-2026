@@ -26,7 +26,7 @@ const BackToTop = () => {
       onClick={scrollToTop}
       className={`
         fixed right-6 md:right-12 z-[80]
-        bottom-10 md:bottom-4
+        bottom-10 md:bottom-12
         group flex flex-col items-center
         transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]
         ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}
@@ -36,7 +36,6 @@ const BackToTop = () => {
         {/* Contenedor del Texto y Flecha */}
         <span className="
           text-[9px] md:text-[10px] uppercase tracking-[0.2em] 
-          /* Aplicando tu escala: de gris definido a negro */
           text-[#888888] group-hover:text-[#1a1a1a]
           px-5 py-2.5 md:px-0 md:py-1
           bg-white/70 backdrop-blur-md md:bg-transparent md:backdrop-blur-none
