@@ -49,7 +49,7 @@ const PascualProject = () => {
           <div className="col-span-12">
             <div className="aspect-[16/7] bg-[#F5F5F5] overflow-hidden group">
                <img 
-                src="/src/assets/pascual_hero.webp" 
+                src="/public/pascual_hero.webp" 
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
                 alt="Pascual Project Hero" 
                />
@@ -153,7 +153,7 @@ const PascualProject = () => {
               <div key={i} className="flex flex-col gap-6">
                 <div className="aspect-[3/4] bg-white border border-[#EEEEEE] overflow-hidden group">
                   <img 
-                    src={`/src/assets/${item.fileName}`} 
+                    src={`/public/${item.fileName}`} 
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                   />
