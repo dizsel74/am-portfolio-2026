@@ -108,7 +108,7 @@ const GEProject = () => {
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
             <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
-              We implemented a <span className="text-white font-semibold">visual-first strategy</span>, prioritizing high-fidelity imagery and a refined typographic scale. The result was a seamless interface that elevates the brand's social commitment and product excellence.
+              Led the <span className="text-white font-semibold">visual-first strategy</span> for this project, leveraging high-fidelity imagery and a refined typographic scale to deliver a seamless interface that reinforces the brand's social and product values.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
