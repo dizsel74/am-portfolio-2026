@@ -108,7 +108,7 @@ const CafeProject = () => {
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
             <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
-              We developed a modular design system that prioritizes white space and high-contrast elements, echoing the brand's <span className="text-white font-semibold">premium hardware finishes</span>. Every interaction was designed to feel deliberate and sophisticated.
+              Developed a modular design system prioritizing whitespace and high-contrast elements to echo the brand's <span className="text-white font-semibold">premium hardware finishes</span>. Every interaction was meticulously crafted to ensure a deliberate and sophisticated user experience.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
