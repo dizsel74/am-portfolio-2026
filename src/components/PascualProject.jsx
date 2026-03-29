@@ -108,7 +108,7 @@ const PascualProject = () => {
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
             <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
-              We created a modular system that allows for rich storytelling without losing technical precision. By implementing <span className="text-white font-semibold">soft interactions</span> and a clean, grid-based layout, we reinforced the brand's values of health and proximity.
+              Architected a modular system that enables rich storytelling while maintaining technical precision. Through soft interactions and a clean, <span className="text-white font-semibold">grid-based layout</span>, this design reinforces the brand's core values of health and proximity.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
