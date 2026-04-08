@@ -196,7 +196,7 @@ const USAAProject = () => {
                   <span className="text-6xl font-light tracking-tighter text-[#1a1a1a] transition-all group-hover:translate-x-3 group-hover:text-[#767676]">
                     {item.value}
                   </span>
-                  <p className="text-[11px] leading-relaxed tracking-[0.1em] text-[#767676] mt-6 uppercase font-medium">
+                  <p className="text-[11px] leading-relaxed tracking-[0.1em] text-[#767676] mt-6  font-medium">
                     {item.label}
                   </p>
                 </div>
