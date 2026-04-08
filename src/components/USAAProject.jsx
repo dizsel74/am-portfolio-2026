@@ -179,7 +179,7 @@ const USAAProject = () => {
               </h2>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[40px] font-medium leading-[1.6] tracking-[0.1em] text-[#1a1a1a]">
+            <h3 className="text-[56px] font-medium leading-[1.6] tracking-[0.1em] text-[#1a1a1a]">
               The Impact of a Unified System
             </h3>
           </div>
