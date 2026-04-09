@@ -108,7 +108,7 @@ const USAAProject = () => {
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
             <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
-              To bridge this decade-long gap, <span className="text-white font-semibold">Reveille Design System</span> was born. A strategic framework designed to align design, engineering, and business objectives.
+              To bridge this decade-long gap, Reveille <span className="text-white font-semibold">Design System</span> was born. A strategic framework designed to align design, engineering, and business objectives.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">

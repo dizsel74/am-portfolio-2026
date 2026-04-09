@@ -108,7 +108,7 @@ const CafeProject = () => {
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
             <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
-              Developed a modular design system prioritizing whitespace and high-contrast elements to echo the brand's <span className="text-white font-semibold">premium hardware finishes</span>. Every interaction was meticulously crafted to ensure a deliberate and sophisticated user experience.
+              Developed a <span className="text-white font-semibold">modular design system </span> prioritizing whitespace and high-contrast elements to echo the brand's premium hardware finishes. Every interaction was meticulously crafted to ensure a deliberate and sophisticated user experience.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
@@ -162,6 +162,43 @@ const CafeProject = () => {
             </div>
             <div className="aspect-square bg-white border border-[#EEEEEE] overflow-hidden group">
               <img src="/cafe_ui_3.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="CAFÉ UI Detail" />
+            </div>
+          </div>
+        </GridContainer>
+      </section>
+
+{/* 4. RESULTS & IMPACT */}
+      <section className="py-24 bg-white">
+        <GridContainer>
+          <div className="col-span-12 lg:col-span-4 mb-16 lg:mb-0">
+            <div className="flex items-center gap-4 mb-8">
+              <h2 className="text-[12px] uppercase tracking-[0.2em] text-[#767676] whitespace-nowrap">
+                04 / results & impact
+              </h2>
+              <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
+            </div>
+            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+              The Impact of a Unified System
+            </h3>
+          </div>
+
+          <div className="col-span-12 lg:col-start-6 lg:col-span-7">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
+              {[
+                { value: '-60%', label: 'Reduction in friction-related support tickets through intuitive UX.' },
+                { value: '100%', label: 'Fluid responsiveness across both English and French platforms, ensuring a pixel-perfect experience on all devices.' },
+                { value: '100%', label: 'Bilingual user flows successfully unified under a single, premium look & feel for the Canadian market (EN/FR).' }
+              ].map((item, i) => (
+                <div key={i} className="group flex flex-col cursor-default">
+                  <div className="h-[1px] bg-[#F0F0F0] w-full mb-8 group-hover:bg-[#E0E0E0] transition-colors" />
+                  <span className="text-6xl font-light tracking-tighter text-[#1a1a1a] transition-all group-hover:translate-x-3 group-hover:text-[#767676]">
+                    {item.value}
+                  </span>
+                  <p className="text-[14px] leading-relaxed tracking-[0.1em] text-[#767676] mt-6  font-medium">
+                    {item.label}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </GridContainer>
