@@ -91,7 +91,7 @@ const CafeProject = () => {
         </GridContainer>
       </section>
 
-   {/* 2. THE SOLUTION */}
+      {/* 2. THE SOLUTION */}
       <section className="py-32 bg-[#1a1a1a] text-[#888888]">
         <GridContainer>
           <div className="col-span-12 lg:col-span-4 mb-16 lg:mb-0">
@@ -167,7 +167,7 @@ const CafeProject = () => {
         </GridContainer>
       </section>
 
-{/* 4. RESULTS & IMPACT */}
+      {/* 4. RESULTS & IMPACT */}
       <section className="py-24 bg-white">
         <GridContainer>
           <div className="col-span-12 lg:col-span-4 mb-16 lg:mb-0">
@@ -235,8 +235,8 @@ const CafeProject = () => {
         </GridContainer>
       </section>
 
-       {/* 6.FOOTER */}
-     <footer className="py-12 bg-[#1a1a1a] border-t border-[#888888]/10">
+      {/* 6.FOOTER */}
+      <footer className="py-12 bg-[#1a1a1a] border-t border-[#888888]/10">
         <GridContainer>
           <div className="col-span-12 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#888888]">
             <span>© 2026 ARTURO MENDOZA</span>

@@ -179,7 +179,7 @@ const GEProject = () => {
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
             <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
-              The Impact of a Unified System
+              Elevating a Global Brand Experience
             </h3>
           </div>
 
