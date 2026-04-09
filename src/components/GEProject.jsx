@@ -186,7 +186,7 @@ const GEProject = () => {
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
               {[
-                { value: '-40%', label: 'Reduction in friction-related support tickets through intuitive UX.' },
+                { value: '-60%', label: 'Reduction in friction-related support tickets through intuitive UX.' },
                 { value: '100%', label: 'Fluid responsiveness across both English and French platforms, ensuring a pixel-perfect experience on all devices.' },
                 { value: '100%', label: 'Bilingual user flows successfully unified under a single, premium look & feel for the Canadian market (EN/FR).' }
               ].map((item, i) => (
