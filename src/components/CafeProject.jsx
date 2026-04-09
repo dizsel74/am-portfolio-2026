@@ -178,16 +178,25 @@ const CafeProject = () => {
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
             <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
-              The Impact of a Unified System
+              Redefining Digital Luxury
             </h3>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
               {[
-                { value: '-60%', label: 'Reduction in friction-related support tickets through intuitive UX.' },
-                { value: '100%', label: 'Fluid responsiveness across both English and French platforms, ensuring a pixel-perfect experience on all devices.' },
-                { value: '100%', label: 'Bilingual user flows successfully unified under a single, premium look & feel for the Canadian market (EN/FR).' }
+                { 
+                  value: '+35%', 
+                  label: 'Increase in user engagement within the custom hardware configurator.' 
+                },
+                { 
+                  value: '500ms', 
+                  label: 'Average load time for high-fidelity interactive 3D-like previews.' 
+                },
+                { 
+                  value: '100%', 
+                  label: 'Seamless integration between hardware selection and final cart checkout.' 
+                }
               ].map((item, i) => (
                 <div key={i} className="group flex flex-col cursor-default">
                   <div className="h-[1px] bg-[#F0F0F0] w-full mb-8 group-hover:bg-[#E0E0E0] transition-colors" />
