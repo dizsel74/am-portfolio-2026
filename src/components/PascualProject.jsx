@@ -169,6 +169,52 @@ const PascualProject = () => {
         </GridContainer>
       </section>
 
+      {/* 4. RESULTS & IMPACT */}
+      <section className="py-24 bg-white">
+        <GridContainer>
+          <div className="col-span-12 lg:col-span-4 mb-16 lg:mb-0">
+            <div className="flex items-center gap-4 mb-8">
+              <h2 className="text-[12px] uppercase tracking-[0.2em] text-[#767676] whitespace-nowrap">
+                04 / results & impact
+              </h2>
+              <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
+            </div>
+            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+              Unifying a Diverse Portfolio
+            </h3>
+          </div>
+
+          <div className="col-span-12 lg:col-start-6 lg:col-span-7">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
+              {[
+                { 
+                  value: '+45%', 
+                  label: 'Growth in cross-brand navigation through an optimized product explorer.' 
+                },
+                { 
+                  value: '2.5s', 
+                  label: 'Average improvement in load times across the entire multi-brand ecosystem.' 
+                },
+                { 
+                  value: '100%', 
+                  label: 'Sub-brands successfully integrated into a single, cohesive design language.' 
+                }
+              ].map((item, i) => (
+                <div key={i} className="group flex flex-col cursor-default">
+                  <div className="h-[1px] bg-[#F0F0F0] w-full mb-8 group-hover:bg-[#E0E0E0] transition-colors" />
+                  <span className="text-6xl font-light tracking-tighter text-[#1a1a1a] transition-all group-hover:translate-x-3 group-hover:text-[#767676]">
+                    {item.value}
+                  </span>
+                  <p className="text-[14px] leading-relaxed tracking-[0.1em] text-[#767676] mt-6  font-medium">
+                    {item.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </GridContainer>
+      </section>      
+
       {/* 5. NEXT PROJECT (Vuelve a USAA para cerrar el bucle) */}
       <section ref={nextProjectRef} className="py-24 bg-[#1a1a1a] text-white">
         <GridContainer>
