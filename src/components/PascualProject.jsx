@@ -149,7 +149,7 @@ const PascualProject = () => {
             {[
               { title: 'Desktop', fileName: 'pascual_ui_1.png', caption: 'FIG. 01 — THE NEW CORPORATE HUB EXPERIENCE.' },
               { title: 'Product', fileName: 'pascual_ui_2.png', caption: 'FIG. 02 — NEW PRODUCT IMAGE VISUALIZATION.' },
-              { title: 'Mobile', fileName: 'pascual_mobile.webp', caption: 'FIG. 03 — RESPONSIVE PRODUCT EXPLORER.' }
+              { title: 'Mobile', fileName: 'pascual_mobile.png', caption: 'FIG. 03 — RESPONSIVE PRODUCT EXPLORER.' }
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-6">
                 <div className="aspect-[3/4] bg-white border border-[#EEEEEE] overflow-hidden group">
