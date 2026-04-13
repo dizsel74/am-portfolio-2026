@@ -158,7 +158,7 @@ const CafeProject = () => {
 
           <div className="col-span-12 grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="aspect-square bg-white border border-[#EEEEEE] overflow-hidden group">
-              <img src="/cafe_ui_2.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="CAFÉ UI" />
+              <img src="/cafe_ui_2.png" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="CAFÉ UI" />
             </div>
             <div className="aspect-square bg-white border border-[#EEEEEE] overflow-hidden group">
               <img src="/cafe_ui_3.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="CAFÉ UI Detail" />
