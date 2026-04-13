@@ -147,8 +147,8 @@ const PascualProject = () => {
 
           <div className="col-span-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: 'Desktop', fileName: 'pascual_ui_1.webp', caption: 'FIG. 01 — THE NEW CORPORATE HUB EXPERIENCE.' },
-              { title: 'Product', fileName: 'pascual_ui_2.webp', caption: 'FIG. 02 — NUTRITIONAL DATA VISUALIZATION.' },
+              { title: 'Desktop', fileName: 'pascual_ui_1.png', caption: 'FIG. 01 — THE NEW CORPORATE HUB EXPERIENCE.' },
+              { title: 'Product', fileName: 'pascual_ui_2.png', caption: 'FIG. 02 — NEW PRODUCT IMAGE VISUALIZATION.' },
               { title: 'Mobile', fileName: 'pascual_mobile.webp', caption: 'FIG. 03 — RESPONSIVE PRODUCT EXPLORER.' }
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-6">
