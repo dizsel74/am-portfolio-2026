@@ -236,7 +236,7 @@ function App() {
                       
                       {/* Párrafo 1 */}
                       <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em] ">
-                        <span className="font-medium">UX/UI Product Designer & Researcher</span> with background in <span className="font-medium">Computer Science Engineering,</span> with a decade of experience creating digital solutions. I leverage my technical expertise to reduce production times by creating cost-effective designs{/*  } for global brands*/}, ensuring visual cohesion and accessibility across all platforms.
+                        <span className="font-medium">UX/UI Product Designer & Researcher</span> with background in <span className="font-medium">Computer Science Engineering.</span> This allows me to bridge the gap between high-leve user research and production ready interfaces.
                       </p>
 
                       {/* Párrafo 2 */}
@@ -320,7 +320,7 @@ function App() {
                     
                     {/* PÁRRAFO INTRO */}
                     <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em] text-[#1a1a1a] mb-[64px]">
-                      Whether you're looking to build a scalable design system, develop a B2B , B2C app, or just want to chat about where crafted pixels meet code I’m always up to the task.
+                      Whether you're looking to build a scalable design system, develop a B2B, B2C app, or just want to chat about where crafted pixels meet code I’m always up to the task.
                     </p>
 
                     {/* EMAIL LINK */}
@@ -343,7 +343,7 @@ function App() {
                           href="https://linkedin.com/in/arturo-mendoza-rendon/" 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="group relative flex items-center gap-2 text-[12px] uppercase font-normal tracking-[0.2em] leading-[1.6] text-[#888888] hover:text-[#1a1a1a] pb-1 "
+                          className="group relative flex items-center gap-2 text-[12px] uppercase font-normal tracking-[0.2em] leading-[1.6] text-[#545454] hover:text-[#1a1a1a] pb-1 "
                         >
                           <span>LINKEDIN</span>
                           <span className="transition-transform duration-400 ease-out transform group-hover:-translate-y-1 group-hover:translate-x-1">
@@ -356,7 +356,7 @@ function App() {
                         <a 
                           href="/Arturo_Mendoza_UX-UI_RESUME.pdf" 
                           download 
-                          className="group relative flex items-center gap-2 text-[12px] uppercase font-normal tracking-[0.2em] leading-[1.6] text-[#888888] hover:text-[#1a1a1a] pb-1"
+                          className="group relative flex items-center gap-2 text-[12px] uppercase font-normal tracking-[0.2em] leading-[1.6] text-[#545454] hover:text-[#1a1a1a] pb-1"
                         >
                           <span>RESUME</span>
                           <span className="transition-transform duration-400 ease-out transform group-hover:-translate-y-1 group-hover:translate-x-1">
