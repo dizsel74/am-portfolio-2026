@@ -93,7 +93,7 @@ function App() {
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">USAA</h3>
                       </div>
                       <p className="text-[clamp(18px,1.8vw,22px)] text-[#4A4A4A]">Achieving cross-platform UX & UI consistency through Design System...</p>
-                      <Link to="/work/usaa" className="group/link relative inline-flex items-center text-[12px] text-[#888888] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
+                      <Link to="/work/usaa" className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
                         VIEW PROJECT
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
@@ -130,7 +130,7 @@ function App() {
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">GE Appliances</h3>
                       </div>
                       <p className="text-[clamp(18px,1.8vw,22px)] text-[#4A4A4A]">Visual redesign for brand's digital experience...</p>
-                      <Link to="/work/ge" className="group/link relative inline-flex items-center text-[12px] text-[#888888] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
+                      <Link to="/work/ge" className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
                          VIEW PROJECT
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
@@ -157,7 +157,7 @@ function App() {
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">CAFÉ Appliances</h3>
                       </div>
                       <p className="text-[clamp(18px,1.8vw,22px)] text-[#4A4A4A]">Modern and elegant aesthetic that defines luxury...</p>
-                      <Link to="/work/cafe" className="group/link relative inline-flex items-center text-[12px] text-[#888888] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
+                      <Link to="/work/cafe" className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
                          VIEW PROJECT
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
@@ -194,7 +194,7 @@ function App() {
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">Pascual</h3>
                       </div>
                       <p className="text-[clamp(18px,1.8vw,22px)] text-[#4A4A4A]">UX/UI design and development for the B2B platform...</p>
-                      <Link to="/work/pascual" className="group/link relative inline-flex items-center text-[12px] text-[#888888] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
+                      <Link to="/work/pascual" className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
                          VIEW PROJECT
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
@@ -236,12 +236,12 @@ function App() {
                       
                       {/* Párrafo 1 */}
                       <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em] ">
-                        <span className="font-medium">UX/UI designer</span> and  <span className="font-medium">web engineer,</span> with a decade of experience creating digital solutions. I leverage my technical expertise to reduce production times by creating cost-effective designs{/*  } for global brands*/}, ensuring visual cohesion and accessibility across all platforms.
+                        <span className="font-medium">UX/UI Product Designer & Researcher</span> with background in <span className="font-medium">web engineer,</span> with a decade of experience creating digital solutions. I leverage my technical expertise to reduce production times by creating cost-effective designs{/*  } for global brands*/}, ensuring visual cohesion and accessibility across all platforms.
                       </p>
 
                       {/* Párrafo 2 */}
                       <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em] ]">
-                        <span className="font-bold text-[#545454]">"</span>Great design brings together the user and the business at the center and building around them with technical efficiency. <span className="font-bold text-[#545454]">"</span></p>
+                        <span className="font-bold text-[#545454]">"Great design brings together the user and the business at the center and building around them with technical efficiency. "</span></p>
                       
                         <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em]">By combining visual storytelling, data analysis, and front-end architecture knowledge, I deliver seamless enterprise and e-commerce  <span className="font-medium">solutions</span> that connect with users and scale with the business.
                       </p>
@@ -320,7 +320,7 @@ function App() {
                     
                     {/* PÁRRAFO INTRO */}
                     <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em] text-[#1a1a1a] mb-[64px]">
-                      Whether you're looking to build a scalable design system, develop a high-performance e-commerce platform, or just want to chat about where crafted pixels meet code—I’m always up to the task.
+                      Whether you're looking to build a scalable design system, develop a B2B , B2C app, or just want to chat about where crafted pixels meet code I’m always up to the task.
                     </p>
 
                     {/* EMAIL LINK */}
