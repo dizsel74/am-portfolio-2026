@@ -21,8 +21,7 @@ const Header = () => {
             <a 
               key={link.name}
               href={link.href} 
-              className="group relative text-[16px] font-normal lowercase text-[#545454] hover:text-[#1a1a1a] tracking-[0.1em] transition-colors duration-300 pb-1"
-            >
+              className="group relative text-[16px] font-normal lowercase text-[#545454] hover:text-[#1a1a1a] tracking-[0.1em] transition-colors duration-300 pb-1" >
               {link.name}
               <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 ease-out group-hover:w-full" />
             </a>
@@ -59,7 +58,7 @@ const Header = () => {
               key={link.name}
               href={link.href} 
               onClick={() => setIsOpen(false)}
-              className="group relative text-[32px] font-normal lowercase tracking-[0.1em] text-[#767676] hover:text-[#1a1a1a] transition-all pb-1"
+              className="group relative text-[32px] font-normal lowercase tracking-[0.1em] text-[#545454] hover:text-[#1a1a1a] transition-all pb-1"
             >
               {link.name}
               <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 ease-out group-hover:w-full" />
