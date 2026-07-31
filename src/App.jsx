@@ -236,7 +236,7 @@ function App() {
                       
                       {/* Párrafo 1 */}
                       <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em] ">
-                        <span className="font-medium">UX/UI Product Designer & Researcher</span> with background in <span className="font-medium">Computer Science Engineering.</span> This allows me to bridge the gap between high-leve user research and production ready interfaces.
+                        <span className="font-medium">UX/UI Product Designer & Researcher</span> with background in <span className="font-medium">Computer Science Engineering.</span> This allows me to bridge the gap between high leve user research and production ready interfaces.
                       </p>
 
                       {/* Párrafo 2 */}
