@@ -236,7 +236,7 @@ function App() {
                       
                       {/* Párrafo 1 */}
                       <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em] ">
-                        <span className="font-medium">UX/UI Product Designer & Researcher</span> with background in <span className="font-medium">web engineer,</span> with a decade of experience creating digital solutions. I leverage my technical expertise to reduce production times by creating cost-effective designs{/*  } for global brands*/}, ensuring visual cohesion and accessibility across all platforms.
+                        <span className="font-medium">UX/UI Product Designer & Researcher</span> with background in <span className="font-medium">Computer Science Engineering,</span> with a decade of experience creating digital solutions. I leverage my technical expertise to reduce production times by creating cost-effective designs{/*  } for global brands*/}, ensuring visual cohesion and accessibility across all platforms.
                       </p>
 
                       {/* Párrafo 2 */}
