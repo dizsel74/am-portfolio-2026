@@ -37,12 +37,12 @@ const ProjectNav = () => {
           to="/" 
           className="group pointer-events-auto relative inline-flex items-center gap-1.5 pb-1"
         >
-          <span className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] md:tracking-[0.3em] text-[#888888] group-hover:text-[#1a1a1a] transition-colors duration-300">
+          <span className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] md:tracking-[0.3em] text-[#545454] group-hover:text-[#1a1a1a] transition-colors duration-300">
             Close
           </span>
 
           <div className="relative w-3 h-4 flex items-center justify-center overflow-visible">
-            <span className="block text-[14px] font-light text-[#888888] group-hover:text-[#1a1a1a] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1">
+            <span className="block text-[14px] font-light text-[#545454] group-hover:text-[#1a1a1a] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1">
               ✕
             </span>
           </div>
