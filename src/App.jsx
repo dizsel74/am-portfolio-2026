@@ -63,7 +63,7 @@ function App() {
                       <p className="text-[24px] lg:text-[24px] leading-relaxed tracking-[0.05em] font-thin">
                         I craft stunning interfaces for clean development, closing the gap between vision and code. Being a <span className="font-bold">UX/UI designer</span> who speaks “Dev”, I’m able to turn complex problems into seamless cost effective digital experiences.
                       </p>
-                      <p className="text-[16px] mt-8 text-[#767676] tracking-[0.05em] ml-auto">- Arturo Mendoza -</p>
+                      <p className="text-[16px] mt-8 text-[#FFFFFF] tracking-[0.05em] ml-auto">- Arturo Mendoza -</p>
                     </div>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ function App() {
                     <div className="col-span-1 md:col-span-6 lg:col-span-3 flex flex-col gap-8 order-2 lg:order-1">
                       <div className="flex flex-col gap-3">
                         <div className="flex items-center gap-4 overflow-hidden">
-                          <span className="text-[12px] text-[#767676] uppercase tracking-[0.1em]">01 / UI DESIGNER</span>
+                          <span className="text-[12px] text-[#545454] uppercase tracking-[0.1em]">01 / UI DESIGNER</span>
                           <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
                         </div>
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">USAA</h3>
@@ -124,7 +124,7 @@ function App() {
                     <div className="col-span-1 md:col-span-6 lg:col-span-3 lg:col-start-10 flex flex-col gap-8 order-2">
                       <div className="flex flex-col gap-3">
                         <div className="flex items-center gap-4 overflow-hidden">
-                          <span className="text-[12px] text-[#767676] uppercase tracking-[0.1em]">02 / UX/UI DESIGN</span>
+                          <span className="text-[12px] text-[#545454] uppercase tracking-[0.1em]">02 / UX/UI DESIGN</span>
                           <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
                         </div>
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">GE Appliances</h3>
@@ -151,7 +151,7 @@ function App() {
                     <div className="col-span-1 md:col-span-6 lg:col-span-3 flex flex-col gap-8 order-2 lg:order-1">
                       <div className="flex flex-col gap-3">
                         <div className="flex items-center gap-4 overflow-hidden">
-                          <span className="text-[12px] text-[#767676] uppercase tracking-[0.1em]">03 / UI DESIGNER</span>
+                          <span className="text-[12px] text-[#545454] uppercase tracking-[0.1em]">03 / UI DESIGNER</span>
                           <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
                         </div>
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">CAFÉ Appliances</h3>
@@ -188,7 +188,7 @@ function App() {
                     <div className="col-span-1 md:col-span-6 lg:col-span-3 lg:col-start-10 flex flex-col gap-8 order-2">
                       <div className="flex flex-col gap-3">
                         <div className="flex items-center gap-4 overflow-hidden">
-                          <span className="text-[12px] text-[#767676] uppercase tracking-[0.1em]">04 / UX RESEARCHER & UX/UI DESIGNER</span>
+                          <span className="text-[12px] text-[#545454] uppercase tracking-[0.1em]">04 / UX RESEARCHER & UX/UI DESIGNER</span>
                           <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
                         </div>
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">Pascual</h3>
@@ -222,7 +222,7 @@ function App() {
                     <h2 className="text-[clamp(40px,6vw,96px)] font-normal tracking-[0.02em] lowercase mb-0 lg:mb-0">
                       about me
                     </h2>
-                    <div className="w-full h-[1px] bg-[#767676]" />
+                    <div className="w-full h-[1px] bg-[#545454]" />
                   </div>
                 </GridContainer>
 
@@ -241,7 +241,7 @@ function App() {
 
                       {/* Párrafo 2 */}
                       <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em] ]">
-                        <span className="font-bold text-[#767676">—</span>Great design brings together the user and the business at the center and building around them with technical efficiency. <span className="font-bold text-[#767676">—</span></p>
+                        <span className="font-bold text-[#545454]">"</span>Great design brings together the user and the business at the center and building around them with technical efficiency. <span className="font-bold text-[#545454]">"</span></p>
                       
                         <p className="text-[clamp(18px,1.8vw,22px)] leading-[1.6] font-normal tracking-[0.05em]">By combining visual storytelling, data analysis, and front-end architecture knowledge, I deliver seamless enterprise and e-commerce  <span className="font-medium">solutions</span> that connect with users and scale with the business.
                       </p>
@@ -277,7 +277,7 @@ function App() {
       
 
       {/* TÍTULO: Se desplaza a la derecha en hover */}
-      <span className="text-[12px] uppercase tracking-[0.1em] font-medium text-[#767676] group-hover:text-[#1a1a1a] transition-all duration-500 transform group-hover:translate-x-2 mb-4">
+      <span className="text-[12px] uppercase tracking-[0.1em] font-medium text-[#545454] group-hover:text-[#1a1a1a] transition-all duration-500 transform group-hover:translate-x-2 mb-4">
         {item.id} {item.title}
       </span>
       {/* LÍNEA ANIMADA: Cambia de gris suave a negro definido */}
@@ -306,7 +306,7 @@ function App() {
                     <h2 className="text-[clamp(40px,6vw,96px)] font-normal tracking-[0.02em] lowercase mb-0 lg:mb-">
                       contact me
                     </h2>
-                    <div className="w-full h-[1px] bg-[#767676]" />
+                    <div className="w-full h-[1px] bg-[#545454]" />
                   </div>
                 </GridContainer>
               {/* 2. CONTENEDOR PRINCIPAL */}
