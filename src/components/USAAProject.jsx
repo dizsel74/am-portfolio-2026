@@ -49,21 +49,30 @@ const USAAProject = () => {
 
 {/* WHAT I LEARNED SECTION */}
 <div className="mb-16 lg:mb-24">
-  <div className="grid grid-cols-1 md:grid-cols-12 gap-y-4 md:gap-x-12 items-start">
+ {/* <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 md:gap-x-12 items-start">*/}
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-x-16 items-start">
     
     {/* Columna Izquierda: Título */}
-   <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
-      <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
-        what I learned
-      </h3>
+   {/*<div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">*/}
+      <div className="lg:col-span-5">
+                  <h2 className="text-[clamp(36px,4vw,56px)] leading-[1.05] font-normal tracking-[-0.03em] text-[#1a1a1a]">
+                    What I <br className="hidden lg:block" />
+                    learned
+                  </h2>
     </div>
 
-    {/* Columna Derecha: Párrafo */}
+    {/* Columna Derecha: Párrafo 
     <div className="col-span-12 lg:col-start-6 lg:col-span-7">
       <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
         By architecting a multi-tier design token system, I eliminated UI drift across distinct lines of business, establishing a single source of truth for design and engineering teams while upholding strict WCAG-compliant standards.
       </p>
-    </div>
+    </div>*/}
+    {/* Columna Derecha: Párrafo de Impacto */}
+                <div className="lg:col-span-7">
+                  <p className="text-[clamp(18px,1.6vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
+                    By architecting a multi-tier design token system, I eliminated UI drift across distinct lines of business, establishing a <strong className="font-semibold text-[#1a1a1a]">single source of truth</strong> for design and engineering teams while upholding strict <strong className="font-semibold text-[#1a1a1a]">WCAG-compliant standards</strong>.
+                  </p>
+                </div>
 
   </div>
 </div>
