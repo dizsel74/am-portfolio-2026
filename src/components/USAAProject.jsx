@@ -187,9 +187,9 @@ const USAAProject = () => {
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
               {[
-                { value: '-70%', label: 'Reduction in support calls related to friction.' },
-                { value: '40%', label: 'Increase in design-to-development speed.' },
-                { value: '100%', label: 'Business lines unified under one language.' }
+                { value: '-70%', label: 'Reduction of drop-off rates by successfully eliminating user cognitive load due to streamlining the UI and information architecture.' },
+                { value: '40%', label: 'Improved design-to-production time.' },
+                { value: '100%', label: 'Lines of business unified under one design system.' }
               ].map((item, i) => (
                 <div key={i} className="group flex flex-col cursor-default">
                   <div className="h-[1px] bg-[#F0F0F0] w-full mb-8 group-hover:bg-[#E0E0E0] transition-colors" />
