@@ -48,11 +48,11 @@ const USAAProject = () => {
             
 
 {/* --- BLOQUE WHAT I LEARNED --- */}
-      <div className="mb-14 max-w-2xl">
-        <h3 className="text-[20px] font-medium tracking-tight text-[#1a1a1a] mb-3">
+      <div className="mb-12 lg:mb-20 max-w-2xl">
+        <h2 className="text-[20px] lg:text-[24px] font-medium tracking-tight text-[#1a1a1a] mb-4">
           What I learned
-        </h3>
-        <p className="text-[16px] lg:text-[18px] leading-relaxed text-[#4A4A4A] font-normal">
+        </h2>
+        <p className="text-[clamp(16px,1.5vw,18px)] leading-relaxed text-[#4A4A4A] font-normal">
           Luxury B2C UX is about emotional connection and performance: transforming complex, modular configuration logic into an effortless, real-time visual journey that accelerates high-intent conversion.
         </p>
       </div>
