@@ -52,7 +52,7 @@ const USAAProject = () => {
         <h2 className="text-[20px] lg:text-[24px] font-medium tracking-tight text-[#1a1a1a] mb-4">
           What I learned
         </h2>
-        <p className="text-[clamp(16px,1.5vw,18px)] leading-relaxed text-[#4A4A4A] font-normal">
+        <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A]">
           Luxury B2C UX is about emotional connection and performance: transforming complex, modular configuration logic into an effortless, real-time visual journey that accelerates high-intent conversion.
         </p>
       </div>
