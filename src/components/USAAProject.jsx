@@ -53,7 +53,7 @@ const USAAProject = () => {
           What I learned
         </h2>
         <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A]">
-          Luxury B2C UX is about emotional connection and performance: transforming complex, modular configuration logic into an effortless, real-time visual journey that accelerates high-intent conversion.
+          By architecting a multi-tier design token system, I eliminated UI drift across distinct lines of business, establishing a single source of truth for design and engineering teams while upholding strict WCAG-compliant standards.
         </p>
       </div>
 
