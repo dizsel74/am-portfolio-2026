@@ -64,15 +64,15 @@ const USAAProject = () => {
   <div className="grid grid-cols-1 md:grid-cols-12 gap-y-4 md:gap-x-12 items-start">
     
     {/* Columna Izquierda: Título */}
-    <div className="md:col-span-4">
-      <h3 className="text-[20px] lg:text-[24px] font-medium tracking-tight text-[#1a1a1a]">
+   <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
+      <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
         This is what I learned
       </h3>
     </div>
 
     {/* Columna Derecha: Párrafo */}
-    <div className="md:col-span-8">
-      <p className="text-[clamp(16px,1.5vw,18px)] leading-relaxed text-[#4A4A4A] font-normal">
+    <div className="col-span-12 lg:col-start-6 lg:col-span-7">
+      <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
         By architecting a multi-tier design token system, I eliminated UI drift across distinct lines of business, establishing a single source of truth for design and engineering teams while upholding strict WCAG-compliant standards.
       </p>
     </div>
