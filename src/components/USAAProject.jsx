@@ -48,8 +48,8 @@ const USAAProject = () => {
             
 
                 {/* WHAT I LEARNED SECTION */}
-                <div className="mb-16 lg:mb-24">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-x-16 items-start">
+                <div className="mb-16 lg:mb-24 py-32">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-16 lg:gap-x-16 items-start">
                     
                     {/* Columna Izquierda: Título */}
                       <div className="col-span-12 lg:col-span-5 mb-12 lg:mb-0">      
@@ -58,8 +58,6 @@ const USAAProject = () => {
                                     learned
                                   </h3>
                     </div>
-
-                
                     {/* Columna Derecha: Párrafo de Impacto */}
                                 <div className="col-span-12 lg:col-start-6 lg:col-span-7">
                                   <p className="text-[clamp(18px,1.6vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
@@ -272,6 +270,7 @@ const USAAProject = () => {
           </div>
         </GridContainer>
       </section>
+
       {/* 6.FOOTER */}
      <footer className="py-12 bg-[#1a1a1a] border-t border-[#888888]/10">
         <GridContainer>
