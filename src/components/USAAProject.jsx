@@ -24,8 +24,9 @@ const USAAProject = () => {
 
   return (
     <div className="bg-[#F9F9F9] pt-32 font-instrument selection:bg-black selection:text-white relative">
-      {/* NAV*/}
-        <ProjectNav/>
+      {/* NAV */}
+      <ProjectNav />
+
       {/* BOTÓN FLOTANTE */}
       <button 
         className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${
@@ -38,55 +39,46 @@ const USAAProject = () => {
       {/* 0. HERO SECTION */}
       <section className="mb-24 lg:mb-40">
         <GridContainer>
-          <div className="col-span-12 lg:col-span-8">
+          {/* HEADER USAA */}
+          <div className="col-span-12 lg:col-span-8 mb-24 lg:mb-36">
             <span className="text-[12px] uppercase tracking-[0.2em] text-[#767676] font-medium">
-              Case Study / Achive Consistency
+              Case Study / Achieve Consistency
             </span>
-            <h1 className="text-[clamp(60px,12vw,140px)] leading-[0.85] font-normal mt-6 mb-12 tracking-[-0.04em] text-[#1a1a1a]">
+            <h1 className="text-[clamp(60px,12vw,140px)] leading-[0.85] font-normal mt-6 tracking-[-0.04em] text-[#1a1a1a]">
               USAA
             </h1>
-            
-
-                {/* WHAT I LEARNED SECTION */}
-                <div className="mb-16 lg:mb-24 py-32">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-16 lg:gap-x-16 items-start">
-                    
-                    {/* Columna Izquierda: Título */}
-                      <div className="col-span-12 lg:col-span-5 mb-12 lg:mb-0">      
-                                  <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
-                                    What I <br className="hidden lg:block" />
-                                    learned
-                                  </h3>
-                    </div>
-                    {/* Columna Derecha: Párrafo de Impacto */}
-                                <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-                                  <p className="text-[clamp(18px,1.6vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
-                                    By architecting a multi-tier design token system, I eliminated UI drift across distinct lines of business, establishing a <strong className="font-semibold text-[#1a1a1a]">single source of truth</strong> for design and engineering teams while upholding strict <strong className="font-semibold text-[#1a1a1a]">WCAG-compliant standards</strong>.
-                                  </p>
-                                </div>
-
-
-                    
-
-                  </div>
-                </div>
-
-
-
-
-
-
-
-            
           </div>
+
+          {/* WHAT I LEARNED SECTION (12 Columnas independientes, idéntico a The Challenge) */}
+          <div className="col-span-12 mb-16 lg:mb-24">
+            <div className="grid grid-cols-1 lg:grid-cols-12 items-start">
+              
+              {/* Columna Izquierda: Título */}
+              <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0">
+                <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+                  What I <br className="hidden lg:block" />
+                  learned
+                </h3>
+              </div>
+
+              {/* Columna Derecha: Párrafo */}
+              <div className="col-span-12 lg:col-start-6 lg:col-span-7">
+                <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
+                  By architecting a multi-tier design token system, I eliminated UI drift across distinct lines of business, establishing a <strong className="font-semibold text-[#1a1a1a]">single source of truth</strong> for design and engineering teams while upholding strict <strong className="font-semibold text-[#1a1a1a]">WCAG-compliant standards</strong>.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
           {/* HERO IMAGE */}
           <div className="col-span-12">
             <div className="aspect-[16/7] bg-[#F5F5F5] overflow-hidden group">
-               <img 
+              <img 
                 src="/usaa_hero.webp" 
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
                 alt="USAA Hero" 
-               />
+              />
             </div>
           </div>
         </GridContainer>
@@ -188,7 +180,7 @@ const USAAProject = () => {
                 <div className="aspect-square bg-white border border-[#EEEEEE] overflow-hidden transition-all duration-500 hover:border-[#CCCCCC] group">
                   <img 
                     src={`/${item.fileName}`} 
-                    alt={item.title}
+                    alt={item.title} 
                     className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                   />
                 </div>
@@ -230,7 +222,7 @@ const USAAProject = () => {
                   <span className="text-6xl font-light tracking-tighter text-[#1a1a1a] transition-all group-hover:translate-x-3 group-hover:text-[#767676]">
                     {item.value}
                   </span>
-                  <p className="text-[14px] leading-relaxed tracking-[0.1em] text-[#767676] mt-6  font-medium">
+                  <p className="text-[14px] leading-relaxed tracking-[0.1em] text-[#767676] mt-6 font-medium">
                     {item.label}
                   </p>
                 </div>
@@ -271,8 +263,8 @@ const USAAProject = () => {
         </GridContainer>
       </section>
 
-      {/* 6.FOOTER */}
-     <footer className="py-12 bg-[#1a1a1a] border-t border-[#888888]/10">
+      {/* 6. FOOTER */}
+      <footer className="py-12 bg-[#1a1a1a] border-t border-[#888888]/10">
         <GridContainer>
           <div className="col-span-12 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#888888]">
             <span>© 2026 ARTURO MENDOZA</span>
