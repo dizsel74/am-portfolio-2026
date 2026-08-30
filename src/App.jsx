@@ -343,6 +343,7 @@ function App() {
                           href="https://linkedin.com/in/arturo-mendoza-rendon/" 
                           target="_blank" 
                           rel="noopener noreferrer"
+                          aria-label="LinkedIn"
                           className="group relative flex items-center gap-2 text-[12px] uppercase font-normal tracking-[0.2em] leading-[1.6] text-[#545454] hover:text-[#1a1a1a] pb-1 "
                         >
                           <span>LINKEDIN</span>
@@ -355,6 +356,7 @@ function App() {
                         {/* RESUME */}
                         <a 
                           href="/Arturo_Mendoza_UX-UI_RESUME.pdf" 
+                          aria-label="Download Arturo Mendoza Resume"
                           download 
                           className="group relative flex items-center gap-2 text-[12px] uppercase font-normal tracking-[0.2em] leading-[1.6] text-[#545454] hover:text-[#1a1a1a] pb-1"
                         >
