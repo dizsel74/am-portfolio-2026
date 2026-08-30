@@ -92,7 +92,7 @@ function App() {
                         </div>
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">USAA</h3>
                       </div>
-                      <p className="text-[clamp(18px,1.8vw,22px)] text-[#4A4A4A]">Achieving cross-platform UX & UI consistency through Design System...</p>
+                      <p className="text-[clamp(18px,1.8vw,22px)] text-[#4A4A4A]">Achieving cross-platform UX & UI consistency through Design System.</p>
                       <Link to="/work/usaa" className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
                         VIEW PROJECT
                         
