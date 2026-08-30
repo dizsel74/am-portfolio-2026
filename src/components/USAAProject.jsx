@@ -27,6 +27,7 @@ const USAAProject = () => {
       {/* NAV */}
       <ProjectNav />
 
+
       {/* BOTÓN FLOTANTE */}
       <button 
         className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${
