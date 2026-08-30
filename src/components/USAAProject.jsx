@@ -79,33 +79,7 @@ const USAAProject = () => {
                 </div>
 
 
-                {/* 1. THE CHALLENGE */}
-      <section className="py-24 border-t border-[#F0F0F0] bg-white">
-        <GridContainer>
-          <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
-           
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
-              Consistency Across a Decade of Growth
-            </h3>
-          </div>
-
-          <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-            <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
-              Through years of rapid growth, USAA's digital ecosystem became a patchwork of different eras. This fragmentation across lines of business not only hurt the online experience but also led to a <span className="text-black font-semibold">70% increase in support calls</span> for simple transactions.
-            </p>
-
-            <div className="flex flex-col">
-              {['Visual & Functional Fragmentation', 'Cognitive Overload', 'Technical Gaps in A11y'].map((point, i) => (
-                <div key={i} className="group py-6 flex items-center cursor-default border-t border-[#F0F0F0] last:border-b">
-                  <h4 className="text-[14px] uppercase leading-none tracking-[0.1em] text-[#1a1a1a] transition-all duration-500 ease-out group-hover:translate-x-3 group-hover:text-[#767676]">
-                    <span className="text-[#888888] mr-2">0{i+1} /</span>{point}
-                  </h4>
-                </div>
-              ))}
-            </div>
-          </div>
-        </GridContainer>
-      </section>
+     
 
   </div>
 </div>
