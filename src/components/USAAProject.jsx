@@ -64,7 +64,7 @@ const USAAProject = () => {
               {/* Columna Derecha: Párrafo */}
               <div className="col-span-12 lg:col-start-6 lg:col-span-7">
                 <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
-                  By architecting a <strong className="font-semibold text-[#1a1a1a]">multi-tier design token system</strong>, I eliminated UI drift across distinct lines of business, establishing a <strong className="font-semibold text-[#1a1a1a]">single source of truth</strong> for design and engineering teams while upholding strict <strong className="font-semibold text-[#1a1a1a]">WCAG-compliant standards</strong>.
+                  By architecting a multi-tier design token system I was able to <strong className="font-semibold text-[#1a1a1a]">achive consistency</strong> across the entire digital ecosystem, I eliminated UI drift across distinct lines of business, establishing a <strong className="font-semibold text-[#1a1a1a]">single source of truth</strong> for design and engineering teams while upholding strict <strong className="font-semibold text-[#1a1a1a]">WCAG-compliant standards</strong>.
                 </p>
               </div>
 
