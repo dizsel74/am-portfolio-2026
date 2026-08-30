@@ -56,7 +56,7 @@ const USAAProject = () => {
               {/* Columna Izquierda: Título */}
               <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0">
                 <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
-                  What I <br className="hidden lg:block" />
+                  What I
                   learned
                 </h3>
               </div>
