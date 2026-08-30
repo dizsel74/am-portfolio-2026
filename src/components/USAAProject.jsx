@@ -54,11 +54,15 @@ const USAAProject = () => {
     
     {/* Columna Izquierda: Título */}
    {/*<div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">*/}
-      <div className="lg:col-span-5">
-                  <h2 className="text-[clamp(36px,4vw,56px)] leading-[1.05] font-normal tracking-[-0.03em] text-[#1a1a1a]">
+      <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
+                  {/*<h2 className="text-[clamp(36px,4vw,56px)] leading-[1.05] font-normal tracking-[-0.03em] text-[#1a1a1a]">
                     What I <br className="hidden lg:block" />
                     learned
-                  </h2>
+                  </h2>*/}
+                  <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+                    What I <br className="hidden lg:block" />
+                    learned
+                  </h3>
     </div>
 
     {/* Columna Derecha: Párrafo 
@@ -68,7 +72,7 @@ const USAAProject = () => {
       </p>
     </div>*/}
     {/* Columna Derecha: Párrafo de Impacto */}
-                <div className="lg:col-span-7">
+                <<div className="col-span-12 lg:col-start-6 lg:col-span-7">
                   <p className="text-[clamp(18px,1.6vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
                     By architecting a multi-tier design token system, I eliminated UI drift across distinct lines of business, establishing a <strong className="font-semibold text-[#1a1a1a]">single source of truth</strong> for design and engineering teams while upholding strict <strong className="font-semibold text-[#1a1a1a]">WCAG-compliant standards</strong>.
                   </p>
@@ -79,12 +83,7 @@ const USAAProject = () => {
       <section className="py-24 border-t border-[#F0F0F0] bg-white">
         <GridContainer>
           <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
-            <div className="flex items-center gap-4 mb-8">
-              <h2 className="text-[12px] uppercase tracking-[0.2em] text-[#767676] whitespace-nowrap">
-                01 / The Challenge
-              </h2>
-              <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
-            </div>
+           
             <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               Consistency Across a Decade of Growth
             </h3>
