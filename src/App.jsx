@@ -297,7 +297,7 @@ function App() {
 
                     {/* --- CONTENEDOR 2: SKILLS (Col 9 a 12) --- */}
                     {/* --- CONTENEDOR 2: SKILLS (Col 9 a 12) --- */}
-<div className="col-span-1 md:col-span-6 lg:col-start-9 lg:col-span-4 flex flex-col gap-[40px] text-[#545454]">
+<div className="col-span-1 md:col-span-6 lg:col-start-9 lg:col-span-4 flex flex-col gap-[40px] text-[#1a1a1a]">
   
   {[
     { 
