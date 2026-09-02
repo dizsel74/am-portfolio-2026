@@ -93,11 +93,16 @@ function App() {
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">USAA</h3>
                       </div>
                       <p className="text-[clamp(18px,1.8vw,22px)] text-[#4A4A4A]">Achieving cross-platform UX & UI consistency through Design System.</p>
-                      <Link to="/work/usaa" className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                        VIEW PROJECT
+                      <Link 
+                      to="/work/usaa" 
+                      aria-label="Explore USAA Case Study"
+                      className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
+                        Explore Case Study
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
-                      <span className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                      <span 
+                      aria-hidden="true"
+                      className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
                         ↗
                       </span>
 
@@ -130,11 +135,16 @@ function App() {
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">GE Appliances</h3>
                       </div>
                       <p className="text-[clamp(18px,1.8vw,22px)] text-[#4A4A4A]">Visual redesign for brand's digital experience...</p>
-                      <Link to="/work/ge" className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                         VIEW PROJECT
+                      <Link 
+                      to="/work/ge" 
+                      aria-label="Explore GE Case Study"
+                      className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
+                         Explore Case Study
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
-                      <span className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                      <span 
+                      aria-hidden="true"
+                      className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
                         ↗
                       </span>
 
@@ -157,11 +167,16 @@ function App() {
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">CAFÉ Appliances</h3>
                       </div>
                       <p className="text-[clamp(18px,1.8vw,22px)] text-[#4A4A4A]">Modern and elegant aesthetic that defines luxury...</p>
-                      <Link to="/work/cafe" className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                         VIEW PROJECT
+                      <Link 
+                      to="/work/cafe" 
+                      aria-label="Explore CAFÉ Case Study"
+                      className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
+                        Explore Case Study
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
-                      <span className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                      <span 
+                      aria-hidden="true"
+                      className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
                         ↗
                       </span>
 
@@ -194,11 +209,16 @@ function App() {
                         <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">Pascual</h3>
                       </div>
                       <p className="text-[clamp(18px,1.8vw,22px)] text-[#4A4A4A]">UX/UI design and development for the B2B platform...</p>
-                      <Link to="/work/pascual" className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                         VIEW PROJECT
+                      <Link 
+                      to="/work/pascual" 
+                      aria-label="Explore Pascual Case Study"
+                      className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
+                         Explore Case Study
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
-                      <span className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                      <span
+                      aria-hidden="true"
+                      className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
                         ↗
                       </span>
 
@@ -328,7 +348,9 @@ function App() {
                           <span>hello@iamuxui.dev</span>
                           
                           {/* Flecha grande con movimiento */}
-                          <span className="text-[0.6em] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-2 group-hover:translate-x-2">
+                          <span 
+                          aria-hidden="true"
+                          className="text-[0.6em] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-2 group-hover:translate-x-2">
                             ↗
                           </span>
 
@@ -347,10 +369,14 @@ function App() {
                           className="group relative flex items-center gap-2 text-[12px] uppercase font-normal tracking-[0.2em] leading-[1.6] text-[#545454] hover:text-[#1a1a1a] pb-1 "
                         >
                           <span>LINKEDIN</span>
-                          <span className="transition-transform duration-400 ease-out transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                          <span 
+                          aria-hidden="true"
+                          className="transition-transform duration-400 ease-out transform group-hover:-translate-y-1 group-hover:translate-x-1">
                             ↗
                           </span>
-                          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 group-hover:w-full" />
+                          <span 
+                          aria-hidden="true"
+                          className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 group-hover:w-full" />
                         </a>
 
                         {/* RESUME */}
@@ -361,7 +387,9 @@ function App() {
                           className="group relative flex items-center gap-2 text-[12px] uppercase font-normal tracking-[0.2em] leading-[1.6] text-[#545454] hover:text-[#1a1a1a] pb-1"
                         >
                           <span>RESUME</span>
-                          <span className="transition-transform duration-400 ease-out transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                          <span 
+                          aria-hidden="true"
+                          className="transition-transform duration-400 ease-out transform group-hover:-translate-y-1 group-hover:translate-x-1">
                             ↗
                           </span>
                           <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 group-hover:w-full" />
