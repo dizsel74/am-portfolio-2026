@@ -77,7 +77,7 @@ const USAAProject = () => {
               <img 
                 src="/usaa_hero.webp" 
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
-                alt="USAA Hero" 
+                alt="USAA Homeowners Insurance award winning service, showing a USA Soldier being greeting by her daughter after returning from deployment" 
               />
             </div>
           </div>
