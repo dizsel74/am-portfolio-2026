@@ -129,7 +129,13 @@ function App() {
                   <div className="col-span-12 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 items-center group">
                     <div className="col-span-1 md:col-span-6 lg:col-span-7 overflow-hidden order-1">
                       <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
+                        <Link 
+                          to="/work/ge" 
+                          tabIndex="-1" 
+                          aria-hidden="true"
+                          className="block aspect-[16/10] bg-[#F5F5F5] overflow-hidden cursor-pointer">`
                         <img src="/GE_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="GE" />
+                        </Link>
                       </div>
                     </div>
                     <div className="col-span-1 md:col-span-6 lg:col-span-3 lg:col-start-10 flex flex-col gap-8 order-2">
@@ -192,7 +198,13 @@ function App() {
                     </div>
                     <div className="col-span-1 md:col-span-6 lg:col-span-7 lg:col-start-6 overflow-hidden order-1 lg:order-3">
                       <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
+                        <Link 
+                          to="/work/cafe" 
+                          tabIndex="-1" 
+                          aria-hidden="true"
+                          className="block aspect-[16/10] bg-[#F5F5F5] overflow-hidden cursor-pointer">`
                         <img src="/cafe_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="Café" />
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -203,7 +215,13 @@ function App() {
                   <div className="col-span-12 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 items-center group">
                     <div className="col-span-1 md:col-span-6 lg:col-span-7 overflow-hidden order-1">
                       <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
+                        <Link 
+                          to="/work/pascual" 
+                          tabIndex="-1" 
+                          aria-hidden="true"
+                          className="block aspect-[16/10] bg-[#F5F5F5] overflow-hidden cursor-pointer">`
                         <img src="/pascual_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="Pascual" />
+                        </Link>
                       </div>
                     </div>
                     <div className="col-span-1 md:col-span-6 lg:col-span-3 lg:col-start-10 flex flex-col gap-8 order-2">
