@@ -64,7 +64,7 @@ const USAAProject = () => {
               {/* Columna Derecha: Párrafo */}
               <div className="col-span-12 lg:col-start-6 lg:col-span-7">
                 <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
-                  By architecting a multi-tier design token system I was able to <strong className="font-semibold text-[#1a1a1a]">achive consistency</strong> across the entire digital ecosystem, I eliminated UI drift across distinct lines of business, establishing a <strong className="font-semibold text-[#1a1a1a]">single source of truth</strong> for design and engineering teams while upholding strict <strong className="font-semibold text-[#1a1a1a]">WCAG-compliant standards</strong>.
+                  By architecting a <strong className="font-semibold text-[#1a1a1a]">multi-tier design token system</strong> I was able to <strong className="font-semibold text-[#1a1a1a]">achive consistency</strong> across the entire digital ecosystem, I eliminated UI drift across distinct lines of business, establishing a <strong className="font-semibold text-[#1a1a1a]">single source of truth</strong> for design and engineering teams while upholding strict <strong className="font-semibold text-[#1a1a1a]">WCAG-compliant standards</strong>.
                 </p>
               </div>
 
@@ -172,9 +172,9 @@ const USAAProject = () => {
 
           <div className="col-span-12 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-14">
             {[
-              { title: 'Atoms', fileName: 'atoms.webp', caption: 'FIG. 01 — ATOMS: CORE INTERACTIVE ELEMENTS & STYLE TOKENS.' },
-              { title: 'Molecules', fileName: 'molecules.webp', caption: 'FIG. 02 — MOLECULES: STANDARDIZED INPUT GROUPS AND PATTERNS.' },
-              { title: 'Organisms', fileName: 'organism.webp', caption: 'FIG. 03 — ORGANISMS: HIGH-LEVEL INTERFACE STRUCTURES.' }
+              { title: 'USAA core design tokens displaying color palettes, typography scale, spacing units, and primary accessible button states.', fileName: 'atoms.webp', caption: 'FIG. 01 — ATOMS: CORE INTERACTIVE ELEMENTS & STYLE TOKENS.' },
+              { title: 'Standardized form input molecules and card patterns with defined validation and focus states for USAA.', fileName: 'molecules.webp', caption: 'FIG. 02 — MOLECULES: STANDARDIZED INPUT GROUPS AND PATTERNS.' },
+              { title: 'High-level modular account overview interface built with compound design system organisms.', fileName: 'organism.webp', caption: 'FIG. 03 — ORGANISMS: HIGH-LEVEL INTERFACE STRUCTURES.' }
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-6">
                 <div className="aspect-square bg-white border border-[#EEEEEE] overflow-hidden transition-all duration-500 hover:border-[#CCCCCC] group">
