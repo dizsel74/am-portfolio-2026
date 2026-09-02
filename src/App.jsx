@@ -112,7 +112,13 @@ function App() {
                     </div>
                     <div className="col-span-1 md:col-span-6 lg:col-span-7 lg:col-start-6 overflow-hidden order-1 lg:order-3">
                       <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
+                      <Link 
+                          to="/work/usaa" 
+                          tabIndex="-1" 
+                          aria-hidden="true"
+                          className="block aspect-[16/10] bg-[#F5F5F5] overflow-hidden cursor-pointer">`
                         <img src="/usaa_preview.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="USAA" />
+                        </Link>
                       </div>
                     </div>
                   </div>
