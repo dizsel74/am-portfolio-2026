@@ -328,7 +328,7 @@ function App() {
       <div className="w-full h-[1px] bg-[#e5e5e5] group-hover:bg-[#1a1a1a] transition-colors duration-500 mb-4" />
 
       {/* LISTA: Los items cambian de gris a negro */}
-      <ul className="flex flex-col leading-[1.6] text-[clamp(14px,1.5vw,16px)] text-[#888888] group-hover:text-[#1a1a1a] transition-colors duration-500">
+      <ul className="flex flex-col leading-[1.6] text-[clamp(14px,1.5vw,16px)] text-[#545454] group-hover:text-[#1a1a1a] transition-colors duration-500">
         {item.skills.map((skill, index) => (
           <li key={index}>{skill}</li>
         ))}
