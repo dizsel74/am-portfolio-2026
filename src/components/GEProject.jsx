@@ -30,6 +30,7 @@ const GEProject = () => {
       <button
         className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${showFloatingBtn ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
           }`}
+        aria-label="Contact me regarding inquiries"
       >
         Contact Me
       </button>
@@ -71,7 +72,7 @@ const GEProject = () => {
               <img
                 src="/GE_hero.webp"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                alt="GE Appliances Hero"
+                alt="GE is proud sponcer of the Canadian Soccer Leag"
               />
             </div>
           </div>
@@ -166,8 +167,8 @@ const GEProject = () => {
 
           <div className="col-span-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
             {[
-              { title: 'Interface', fileName: 'ge_ui_1.webp', caption: 'FIG. 01 — PREMIUM E-COMMERCE INTERFACE REDESIGN.' },
-              { title: 'Mobile', fileName: 'ge_mobile.webp', caption: 'FIG. 02 — RESPONSIVE EXPERIENCE & FLUID LAYOUTS.' },
+              { title: 'Premium e-commerce desktop interface redesign for GE Appliances showcasing high-fidelity product imagery and clean typography', fileName: 'ge_ui_1.webp', caption: 'FIG. 01 — PREMIUM E-COMMERCE INTERFACE REDESIGN.' },
+              { title: 'Responsive mobile layout for GE Appliances displaying fluid product galleries and intuitive navigation patterns', fileName: 'ge_mobile.webp', caption: 'FIG. 02 — RESPONSIVE EXPERIENCE & FLUID LAYOUTS.' },
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-6">
                 <div className="aspect-[4/3] bg-white border border-[#EEEEEE] overflow-hidden group">
@@ -232,7 +233,7 @@ const GEProject = () => {
             <span className="text-[12px] uppercase tracking-[0.2em] text-[#767676] mb-12 block">
               Next Project
             </span>
-            <Link to="/work/cafe" className="group block">
+            <Link to="/work/cafe" className="group block" aria-label="Navigate to the next project: CAFÉ Luxury Experience">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                 <div className="max-w-2xl">
                   <h2 className="text-[clamp(40px,8vw,90px)] font-normal leading-[1] tracking-tighter transition-all duration-700 group-hover:text-[#767676]">
@@ -261,7 +262,7 @@ const GEProject = () => {
         <GridContainer>
           <div className="col-span-12 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#888888]">
             <span>© 2026 ARTURO MENDOZA</span>
-            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-white transition-colors cursor-pointer">
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-white transition-colors cursor-pointer" aria-label="Scroll back to the top of the page">
               Back to top ↑
             </button>
           </div>

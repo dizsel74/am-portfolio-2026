@@ -29,10 +29,10 @@ const USAAProject = () => {
 
 
       {/* BOTÓN FLOTANTE */}
-      <button 
-        className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${
-          showFloatingBtn ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
-        }`}
+      <button
+        className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${showFloatingBtn ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
+          }`}
+        aria-label="Contact me regarding inquiries"
       >
         Contact Me
       </button>
@@ -53,7 +53,7 @@ const USAAProject = () => {
           {/* WHAT I LEARNED SECTION (12 Columnas independientes, idéntico a The Challenge) */}
           <div className="col-span-12 mb-16 lg:mb-24">
             <div className="grid grid-cols-1 lg:grid-cols-12 items-start">
-              
+
               {/* Columna Izquierda: Título */}
               <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0">
                 <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
@@ -74,10 +74,10 @@ const USAAProject = () => {
           {/* HERO IMAGE */}
           <div className="col-span-12">
             <div className="aspect-[16/7] bg-[#F5F5F5] overflow-hidden group">
-              <img 
-                src="/usaa_hero.webp" 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
-                alt="USAA Homeowners Insurance award winning service, showing a USA Soldier being greeting by her daughter after returning from deployment" 
+              <img
+                src="/usaa_hero.webp"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                alt="USAA Homeowners Insurance award winning service, showing a USA Soldier being greeting by her daughter after returning from deployment"
               />
             </div>
           </div>
@@ -108,7 +108,7 @@ const USAAProject = () => {
               {['Visual & Functional Fragmentation', 'Cognitive Overload', 'Technical Gaps in A11y'].map((point, i) => (
                 <div key={i} className="group py-6 flex items-center cursor-default border-t border-[#F0F0F0] last:border-b">
                   <h4 className="text-[14px] uppercase leading-none tracking-[0.1em] text-[#1a1a1a] transition-all duration-500 ease-out group-hover:translate-x-3 group-hover:text-[#767676]">
-                    <span className="text-[#888888] mr-2">0{i+1} /</span>{point}
+                    <span className="text-[#888888] mr-2">0{i + 1} /</span>{point}
                   </h4>
                 </div>
               ))}
@@ -178,9 +178,9 @@ const USAAProject = () => {
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-6">
                 <div className="aspect-square bg-white border border-[#EEEEEE] overflow-hidden transition-all duration-500 hover:border-[#CCCCCC] group">
-                  <img 
-                    src={`/${item.fileName}`} 
-                    alt={item.title} 
+                  <img
+                    src={`/${item.fileName}`}
+                    alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                   />
                 </div>
@@ -239,7 +239,7 @@ const USAAProject = () => {
             <span className="text-[12px] uppercase tracking-[0.2em] text-[#767676] mb-12 block">
               Next Project
             </span>
-            <Link to="/work/ge" className="group block">
+            <Link to="/work/ge" className="group block" aria-label="Navigate to the next project: GE Appliances">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                 <div className="max-w-2xl">
                   <h2 className="text-[clamp(40px,8vw,90px)] font-normal leading-[1] tracking-tighter transition-all duration-700 group-hover:text-[#767676]">
@@ -268,7 +268,7 @@ const USAAProject = () => {
         <GridContainer>
           <div className="col-span-12 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#888888]">
             <span>© 2026 ARTURO MENDOZA</span>
-            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-white transition-colors cursor-pointer">
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-white transition-colors cursor-pointer" aria-label="Scroll back to the top of the page">
               Back to top ↑
             </button>
           </div>

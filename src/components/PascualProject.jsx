@@ -31,6 +31,7 @@ const PascualProject = () => {
         onClick={() => window.location.href = "mailto:hello@iamuxui.dev?subject=Project Inquiry - Portfolio"}
         className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform hover:scale-105 active:scale-95 ${showFloatingBtn ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
           }`}
+        aria-label="Contact me regarding inquiries"
       >
         Contact Me
       </button>
@@ -72,7 +73,7 @@ const PascualProject = () => {
               <img
                 src="/Pascual_hero.webp"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                alt="Pascual Project Hero"
+                alt="Pascual unified corporate hub hero section reflecting sustainability and fresh natural ingredients"
               />
             </div>
           </div>
@@ -167,9 +168,9 @@ const PascualProject = () => {
 
           <div className="col-span-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: 'Desktop', fileName: 'pascual_ui_1.webp', caption: 'FIG. 01 — THE NEW CORPORATE HUB EXPERIENCE.' },
-              { title: 'Product', fileName: 'pascual_ui_2.png', caption: 'FIG. 02 — NEW PRODUCT IMAGE VISUALIZATION.' },
-              { title: 'Mobile', fileName: 'pascual_mobile.png', caption: 'FIG. 03 — RESPONSIVE PRODUCT EXPLORER.' }
+              { title: 'Clean, grid-based desktop interface for the Pascual corporate platform highlighting nutritional information and cross-brand architecture', fileName: 'pascual_ui_1.webp', caption: 'FIG. 01 — THE NEW CORPORATE HUB EXPERIENCE.' },
+              { title: 'Dynamic product visualization card detailing Pascual\'s food origin, transparent practices, and health benefits', fileName: 'pascual_ui_2.png', caption: 'FIG. 02 — NEW PRODUCT IMAGE VISUALIZATION.' },
+              { title: 'Responsive mobile product explorer for Pascual designed for seamless, multi-device consumer exploration', fileName: 'pascual_mobile.png', caption: 'FIG. 03 — RESPONSIVE PRODUCT EXPLORER.' }
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-6">
                 <div className="aspect-[3/4] bg-white border border-[#EEEEEE] overflow-hidden group">
@@ -243,7 +244,7 @@ const PascualProject = () => {
             <span className="text-[12px] uppercase tracking-[0.2em] text-[#767676] mb-12 block">
               Next Project
             </span>
-            <Link to="/work/usaa" className="group block">
+            <Link to="/work/usaa" className="group block" aria-label="Navigate to the next project: USAA Achive Consistency">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                 <div className="max-w-2xl">
                   <h2 className="text-[clamp(40px,8vw,90px)] font-normal leading-[1] tracking-tighter transition-all duration-700 group-hover:text-[#767676]">
@@ -272,7 +273,7 @@ const PascualProject = () => {
         <GridContainer>
           <div className="col-span-12 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#888888]">
             <span>© 2026 ARTURO MENDOZA</span>
-            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-white transition-colors cursor-pointer">
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-white transition-colors cursor-pointer" aria-label="Scroll back to the top of the page">
               Back to top ↑
             </button>
           </div>
