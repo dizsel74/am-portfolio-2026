@@ -24,13 +24,12 @@ const GEProject = () => {
 
   return (
     <div className="bg-[#F9F9F9] pt-32 font-instrument selection:bg-black selection:text-white relative">
-        {/* NAV*/}
-        <ProjectNav/>
+      {/* NAV*/}
+      <ProjectNav />
       {/* BOTÓN FLOTANTE */}
-      <button 
-        className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${
-          showFloatingBtn ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
-        }`}
+      <button
+        className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${showFloatingBtn ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
+          }`}
       >
         Contact Me
       </button>
@@ -46,13 +45,34 @@ const GEProject = () => {
               GE <br /> Appliances
             </h1>
           </div>
+          {/* WHAT I LEARNED SECTION */}
+          <div className="col-span-12 mb-16 lg:mb-24">
+            <div className="grid grid-cols-1 lg:grid-cols-12 items-start">
+
+              {/* Columna Izquierda: Título */}
+              <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0">
+                <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+                  What I learned
+                </h3>
+              </div>
+
+              {/* Columna Derecha: Párrafo */}
+              <div className="col-span-12 lg:col-start-6 lg:col-span-7">
+                <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
+                  Global expansion requires architectural flexibility: designing layout systems that seamlessly absorb bilingual content variations (EN/FR) without sacrificing visual hierarchy or brand consistency.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
           <div className="col-span-12">
             <div className="aspect-[16/7] bg-[#F5F5F5] overflow-hidden group">
-               <img 
-                src="/GE_hero.webp" 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
-                alt="GE Appliances Hero" 
-               />
+              <img
+                src="/GE_hero.webp"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                alt="GE Appliances Hero"
+              />
             </div>
           </div>
         </GridContainer>
@@ -82,7 +102,7 @@ const GEProject = () => {
               {['Legacy Visual Debt', 'Inconsistent Brand Voice', 'Complex Navigation Patterns'].map((point, i) => (
                 <div key={i} className="group py-6 flex items-center cursor-default border-t border-[#F0F0F0] last:border-b">
                   <h4 className="text-[14px] uppercase leading-none tracking-[0.1em] text-[#1a1a1a] transition-all duration-500 ease-out group-hover:translate-x-3 group-hover:text-[#767676]">
-                    <span className="text-[#888888] mr-2">0{i+1} /</span>{point}
+                    <span className="text-[#888888] mr-2">0{i + 1} /</span>{point}
                   </h4>
                 </div>
               ))}
@@ -91,7 +111,7 @@ const GEProject = () => {
         </GridContainer>
       </section>
 
- {/* 2. THE SOLUTION */}
+      {/* 2. THE SOLUTION */}
       <section className="py-32 bg-[#1a1a1a] text-[#888888]">
         <GridContainer>
           <div className="col-span-12 lg:col-span-4 mb-16 lg:mb-0">
@@ -151,8 +171,8 @@ const GEProject = () => {
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-6">
                 <div className="aspect-[4/3] bg-white border border-[#EEEEEE] overflow-hidden group">
-                  <img 
-                    src={`/${item.fileName}`} 
+                  <img
+                    src={`/${item.fileName}`}
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                   />
@@ -236,8 +256,8 @@ const GEProject = () => {
         </GridContainer>
       </section>
 
-  {/* 6.FOOTER */}
-     <footer className="py-12 bg-[#1a1a1a] border-t border-[#888888]/10">
+      {/* 6.FOOTER */}
+      <footer className="py-12 bg-[#1a1a1a] border-t border-[#888888]/10">
         <GridContainer>
           <div className="col-span-12 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#888888]">
             <span>© 2026 ARTURO MENDOZA</span>
