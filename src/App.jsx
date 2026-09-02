@@ -97,7 +97,7 @@ function App() {
                       to="/work/usaa" 
                       aria-label="Explore USAA Case Study"
                       className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                        Explore Case Study
+                        EXPLORE CASE STUDY
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
                       <span 
@@ -139,7 +139,7 @@ function App() {
                       to="/work/ge" 
                       aria-label="Explore GE Case Study"
                       className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                         Explore Case Study
+                         EXPLORE CASE STUDY
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
                       <span 
@@ -171,7 +171,7 @@ function App() {
                       to="/work/cafe" 
                       aria-label="Explore CAFÉ Case Study"
                       className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                        Explore Case Study
+                        EXPLORE CASE STUDY
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
                       <span 
@@ -213,7 +213,7 @@ function App() {
                       to="/work/pascual" 
                       aria-label="Explore Pascual Case Study"
                       className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                         Explore Case Study
+                         EXPLORE CASE STUDY
                         
                         {/* FLECHA CON MOVIMIENTO DIAGONAL */}
                       <span
