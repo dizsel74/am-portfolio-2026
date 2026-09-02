@@ -24,13 +24,12 @@ const CafeProject = () => {
 
   return (
     <div className="bg-[#F9F9F9] pt-32 font-instrument selection:bg-black selection:text-white relative">
-        {/* NAV*/}
-        <ProjectNav/>
+      {/* NAV*/}
+      <ProjectNav />
       {/* BOTÓN FLOTANTE */}
-      <button 
-        className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${
-          showFloatingBtn ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
-        }`}
+      <button
+        className={`fixed right-8 bottom-12 z-50 bg-black text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] transition-all duration-500 transform ${showFloatingBtn ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
+          }`}
       >
         Contact Me
       </button>
@@ -43,16 +42,37 @@ const CafeProject = () => {
               Case Study / Luxury Lifestyle
             </span>
             <h1 className="text-[clamp(60px,10vw,140px)] leading-[0.85] font-normal mt-6 mb-12 tracking-[-0.04em] text-[#1a1a1a]">
-              CAFÉ <br /> 
+              CAFÉ <br />
             </h1>
           </div>
+          {/* WHAT I LEARNED SECTION */}
+          <div className="col-span-12 mb-16 lg:mb-24">
+            <div className="grid grid-cols-1 lg:grid-cols-12 items-start">
+
+              {/* Columna Izquierda: Título */}
+              <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0">
+                <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+                  What I learned
+                </h3>
+              </div>
+
+              {/* Columna Derecha: Párrafo */}
+              <div className="col-span-12 lg:col-start-6 lg:col-span-7">
+                <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
+                  Luxury B2C UX is about emotional connection and performance: transforming complex, modular configuration logic into an effortless, real-time visual journey that accelerates high-intent conversion.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
           <div className="col-span-12">
             <div className="aspect-[16/7] bg-[#F5F5F5] overflow-hidden group">
-               <img 
-                src="/Cafe_hero.webp" 
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
-                alt="CAFÉ Appliances Hero" 
-               />
+              <img
+                src="/Cafe_hero.webp"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                alt="CAFÉ Appliances Hero"
+              />
             </div>
           </div>
         </GridContainer>
@@ -82,7 +102,7 @@ const CafeProject = () => {
               {['High-Fidelity Rendering', 'Personalization UI/UX', 'Mobile-First Configurators'].map((point, i) => (
                 <div key={i} className="group py-6 flex items-center cursor-default border-t border-[#F0F0F0] last:border-b">
                   <h4 className="text-[14px] uppercase leading-none tracking-[0.1em] text-[#1a1a1a] transition-all duration-500 ease-out group-hover:translate-x-3 group-hover:text-[#767676]">
-                    <span className="text-[#888888] mr-2">0{i+1} /</span>{point}
+                    <span className="text-[#888888] mr-2">0{i + 1} /</span>{point}
                   </h4>
                 </div>
               ))}
@@ -147,11 +167,11 @@ const CafeProject = () => {
           {/* Full Width Image for Cafe */}
           <div className="col-span-12 mb-12">
             <div className="aspect-[21/9] bg-[#F5F5F5] overflow-hidden group">
-               <img 
-                src="/cafe_configurator.webp" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                alt="CAFÉ Configurator" 
-               />
+              <img
+                src="/cafe_configurator.webp"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt="CAFÉ Configurator"
+              />
             </div>
             <p className="text-[10px] mt-4 uppercase tracking-[0.15em] text-[#888888]">FIG. 01 — THE INTERACTIVE CONFIGURATOR INTERFACE.</p>
           </div>
@@ -185,17 +205,17 @@ const CafeProject = () => {
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
               {[
-                { 
-                  value: '+35%', 
-                  label: 'Increase in user engagement within the custom hardware configurator.' 
+                {
+                  value: '+35%',
+                  label: 'Increase in user engagement within the custom hardware configurator.'
                 },
-                { 
-                  value: '500ms', 
-                  label: 'Average load time for high-fidelity interactive 3D-like previews.' 
+                {
+                  value: '500ms',
+                  label: 'Average load time for high-fidelity interactive 3D-like previews.'
                 },
-                { 
-                  value: '100%', 
-                  label: 'Seamless integration between hardware selection and final cart checkout.' 
+                {
+                  value: '100%',
+                  label: 'Seamless integration between hardware selection and final cart checkout.'
                 }
               ].map((item, i) => (
                 <div key={i} className="group flex flex-col cursor-default">
