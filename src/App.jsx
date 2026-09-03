@@ -368,7 +368,7 @@ function App() {
                     </p>
 
                     {/* EMAIL LINK */}
-                    <a href="mailto:hello@iamuxui.dev" className="group w-fit text-[clamp(28px,4vw,48px)] leading-[1.6] font-normal tracking-[0.05em] text-[#1a1a1a] mb-[64px] relative inline-flex items-center gap-4 pb-2">
+                    <a href="mailto:hello@iamuxui.dev?subject=Design%20Opportunity%20/%20Inquiry" className="group w-fit text-[clamp(28px,4vw,48px)] leading-[1.6] font-normal tracking-[0.05em] text-[#1a1a1a] mb-[64px] relative inline-flex items-center gap-4 pb-2">
                           <span>hello@iamuxui.dev</span>
                           
                           {/* Flecha grande con movimiento */}
