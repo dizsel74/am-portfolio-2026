@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const BackToTop = () => {
   const { scrollYProgress } = useScroll();
   const [isVisible, setIsVisible] = useState(false);
 
+  // La altura del contenedor es h-40 (160px). El thumb mide h-6 (24px).
+  // Distancia máxima de viaje = 160px - 24px = 136px.
+  const y = useTransform(scrollYProgress, [0, 1], [0, 136]);
+
   useEffect(() => {
-    // Show vertical scroll bar after scrolling down past initial view
     const handleScroll = () => {
+      // Mostramos el scroll después de bajar un poco
       if (window.scrollY > 300) {
         setIsVisible(true);
       } else {
@@ -31,7 +35,7 @@ const BackToTop = () => {
         x: isVisible ? 0 : 20
       }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed right-4 md:right-8 top-1/2 -translate-y-1/2 z-[80] h-40 w-12 flex justify-center group cursor-pointer ${!isVisible && 'pointer-events-none'}`}
+      className={`fixed right-4 md:right-8 top-1/2 -translate-y-1/2 z-[80] h-40 w-8 flex justify-center group cursor-pointer ${!isVisible && 'pointer-events-none'}`}
       onClick={scrollToTop}
       aria-label="Scroll back to top"
       role="button"
@@ -40,17 +44,17 @@ const BackToTop = () => {
         if (e.key === 'Enter') scrollToTop(e);
       }}
     >
-      {/* Container line (light gray) */}
-      <div className="absolute right-4 w-[1px] h-full bg-[#E0E0E0] group-hover:bg-[#CCCCCC] transition-colors duration-500" />
+      {/* Container line (Gris claro) */}
+      <div className="absolute left-1/2 -translate-x-1/2 w-[1px] h-full bg-[#D4D4D4] group-hover:bg-[#A3A3A3] transition-colors duration-500" />
 
-      {/* Progress line (black) */}
+      {/* Thumb / Pill (Negro oscuro) animado en Y */}
       <motion.div
-        className="absolute right-4 w-[2px] h-full bg-[#1a1a1a] origin-top"
-        style={{ scaleY: scrollYProgress }}
+        className="absolute left-1/2 -translate-x-1/2 w-[5px] h-6 bg-[#1a1a1a] rounded-full shadow-sm"
+        style={{ top: 0, y }}
       />
 
-      {/* Text rotated perpendicular to the line */}
-      <span className="absolute right-8 top-1/2 -translate-y-1/2 -rotate-90 origin-right text-[9px] uppercase tracking-[0.2em] font-medium text-[#1a1a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 whitespace-nowrap">
+      {/* Texto de TOP - aparece al hacer hover */}
+      <span className="absolute right-6 top-1/2 -translate-y-1/2 -rotate-90 origin-right text-[9px] uppercase tracking-[0.2em] font-medium text-[#1a1a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 whitespace-nowrap">
         TOP ↑
       </span>
     </motion.div>
