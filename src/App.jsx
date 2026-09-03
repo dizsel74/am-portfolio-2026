@@ -367,7 +367,7 @@ function App() {
               </section>
 
               {/* SECCIÓN: CONTACT */}
-              <section id="contact" className="py-24 md:py-24 text-[#1a1a1a]">
+              <section id="contact" className="pt-24 pb-32 md:py-24 text-[#1a1a1a]">
 
                 {/* 1. CABECERA DE SECCIÓN */}
                 <GridContainer className="mb-20 lg:mb-[80px]"> {/* 80px espacio tras la línea */}
@@ -396,7 +396,7 @@ function App() {
                     <a
                       href="mailto:hello@iamuxui.dev?subject=Design%20Opportunity%20/%20Inquiry"
                       onClick={handleEmailClick}
-                      className="group w-fit text-[clamp(28px,4vw,48px)] leading-[1.6] font-normal tracking-[0.05em] text-[#1a1a1a] mb-[64px] relative inline-flex items-center gap-4 pb-2"
+                      className="group w-fit text-[clamp(28px,4vw,48px)] leading-[1.6] font-normal tracking-[0.05em] text-[#1a1a1a] mb-[64px] relative inline-flex items-center gap-1 md:gap-3 pb-2"
                       aria-label="Send email to hello@iamuxui.dev">
                       <span>hello@iamuxui.dev</span>
 
@@ -472,7 +472,7 @@ function App() {
                     <div className="w-full h-[1px] bg-[#F0F0F0]" />
                   </div>
                   {/* items-center asegura el centrado vertical exacto dentro de los 98px */}
-                  <div className="col-span-12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0  ">
+                  <div className="col-span-12 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0 pb-10 md:pb-0">
 
                     {/* 1er BLOQUE: COPYRIGHT */}
                     <div className="w-full md:max-w-[312px]">
