@@ -31,7 +31,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-[100] bg-white/20 backdrop-blur-md transition-colors duration-500">
+    <header className="fixed top-0 left-0 w-full z-[100] bg-white/75 backdrop-blur-lg transition-colors duration-500">
       <GridContainer className="h-[80px] flex items-center">
 
         {/* DESKTOP NAV */}

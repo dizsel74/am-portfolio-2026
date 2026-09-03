@@ -35,7 +35,7 @@ const ProjectNav = () => {
         }`}
     >
       {/* CAPA DE CRISTAL TRASLÚCIDO */}
-      <div className="absolute inset-0 bg-[#F9F9F9]/20 backdrop-blur-md transition-colors duration-500" />
+      <div className="absolute inset-0 bg-[#F9F9F9]/75 backdrop-blur-lg transition-colors duration-500" />
 
       <div className="relative max-w-[1440px] mx-auto px-6 md:px-10 py-6 md:py-10 flex justify-between items-center pointer-events-none">
 
