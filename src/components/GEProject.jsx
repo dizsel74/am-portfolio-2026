@@ -33,7 +33,7 @@ const GEProject = () => {
           }`}
         aria-label="Send email to hello@iamuxui.dev"
       >
-        Contact Me
+        Email Me
       </a>
 
       {/* 0. HERO SECTION */}

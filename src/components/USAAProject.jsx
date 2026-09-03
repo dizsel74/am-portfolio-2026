@@ -31,12 +31,11 @@ const USAAProject = () => {
       {/* BOTÓN FLOTANTE */}
       <a
         href="mailto:hello@iamuxui.dev?subject=Design%20Opportunity%20/%20Inquiry"
-        className={`fixed right-8 bottom-12 z-50 bg-[#1a1a1a] text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium transition-all duration-500 transform shadow-md hover:bg-black hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 ${
-          showFloatingBtn ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-20 opacity-0 pointer-events-none'
-        }`}
+        className={`fixed right-8 bottom-12 z-50 bg-[#1a1a1a] text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium transition-all duration-500 transform shadow-md hover:bg-black hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 ${showFloatingBtn ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-20 opacity-0 pointer-events-none'
+          }`}
         aria-label="Send email to hello@iamuxui.dev"
       >
-        Contact Me
+        Email Me
       </a>
 
       {/* 0. HERO SECTION */}
