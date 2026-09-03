@@ -55,7 +55,7 @@ const BackToTop = () => {
 
       {/* Texto de TOP - aparece al hacer hover */}
       <span className="absolute right-6 top-1/2 -translate-y-1/2 -rotate-90 origin-right text-[9px] uppercase tracking-[0.2em] font-medium text-[#1a1a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 whitespace-nowrap">
-        TOP ↑
+        TOP →
       </span>
     </motion.div>
   );
