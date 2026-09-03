@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import GridContainer from './GridContainer';
 import ProjectNav from './ProjectNav';
 import FloatingEmailButton from './FloatingEmailButton';
+import BackToTop from './BackToTop';
 
 const GEProject = () => {
   const [showFloatingBtn, setShowFloatingBtn] = useState(true);
@@ -30,6 +31,7 @@ const GEProject = () => {
       <ProjectNav />
       {/* BOTÓN FLOTANTE */}
       <FloatingEmailButton showFloatingBtn={showFloatingBtn} />
+      <BackToTop showFloatingBtn={showFloatingBtn} />
 
       {/* 0. HERO SECTION */}
       <section className="mb-24 lg:mb-40">

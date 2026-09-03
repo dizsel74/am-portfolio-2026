@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-const BackToTop = () => {
+const BackToTop = ({ showFloatingBtn = true }) => {
   const { scrollYProgress } = useScroll();
   const [isVisible, setIsVisible] = useState(false);
 
@@ -31,11 +31,11 @@ const BackToTop = () => {
     <motion.div
       initial={{ opacity: 0, x: 20 }}
       animate={{
-        opacity: isVisible ? 1 : 0,
-        x: isVisible ? 0 : 20
+        opacity: (isVisible && showFloatingBtn) ? 1 : 0,
+        x: (isVisible && showFloatingBtn) ? 0 : 20
       }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed right-4 md:right-8 top-1/2 -translate-y-1/2 z-[80] h-40 w-8 flex justify-center group cursor-pointer ${!isVisible && 'pointer-events-none'}`}
+      className={`fixed right-4 md:right-8 top-1/2 -translate-y-1/2 z-[80] h-40 w-8 flex justify-center group cursor-pointer ${!(isVisible && showFloatingBtn) && 'pointer-events-none'}`}
       onClick={scrollToTop}
       aria-label="Scroll back to top"
       role="button"
