@@ -3,30 +3,10 @@ import { Link } from 'react-router-dom';
 
 const ProjectNav = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isDarkBg, setIsDarkBg] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 100);
-
-    const handleScroll = () => {
-      const darkSections = document.querySelectorAll('.bg-\\[\\#1a1a1a\\]');
-      let isDark = false;
-      darkSections.forEach(sec => {
-        const rect = sec.getBoundingClientRect();
-        if (rect.top <= 40 && rect.bottom >= 40) {
-          isDark = true;
-        }
-      });
-      setIsDarkBg(isDark);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -35,7 +15,7 @@ const ProjectNav = () => {
         }`}
     >
       {/* CAPA DE CRISTAL TRASLÚCIDO */}
-      <div className="absolute inset-0 bg-[#F9F9F9]/75 backdrop-blur-lg transition-colors duration-500" />
+      <div className="absolute inset-0 bg-white/60 backdrop-blur-lg transition-colors duration-500" />
 
       <div className="relative max-w-[1440px] mx-auto px-6 md:px-10 py-6 md:py-10 flex justify-between items-center pointer-events-none">
 
@@ -44,7 +24,7 @@ const ProjectNav = () => {
           to="/"
           className="pointer-events-auto group flex items-center"
         >
-          <div className={`text-[24px] md:text-[28px] font-bold leading-[0.7] flex antialiased select-none transition-colors duration-300 ${isDarkBg ? 'text-white group-hover:text-gray-300' : 'text-[#1a1a1a] group-hover:text-[#888888]'}`}>
+          <div className="text-[24px] md:text-[28px] font-bold leading-[0.7] flex antialiased select-none transition-colors duration-300 text-[#1a1a1a] group-hover:text-[#888888]">
             {/* Mantenemos la superposición exacta de tu logo principal */}
             <span className="relative z-10 -mr-[0.135em] block transform-gpu">A</span>
             <span className="relative z-0 block transform-gpu">M</span>
@@ -56,18 +36,18 @@ const ProjectNav = () => {
           to="/"
           className="group pointer-events-auto relative inline-flex items-center gap-1.5 pb-1"
         >
-          <span className={`text-[10px] md:text-[11px] uppercase tracking-[0.2em] md:tracking-[0.3em] transition-colors duration-300 ${isDarkBg ? 'text-gray-300 group-hover:text-white' : 'text-[#545454] group-hover:text-[#1a1a1a]'}`}>
+          <span className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] md:tracking-[0.3em] transition-colors duration-300 text-[#545454] group-hover:text-[#1a1a1a]">
             Close
           </span>
 
           <div className="relative w-3 h-4 flex items-center justify-center overflow-visible">
-            <span className={`block text-[14px] font-light transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 ${isDarkBg ? 'text-gray-300 group-hover:text-white' : 'text-[#545454] group-hover:text-[#1a1a1a]'}`}>
+            <span className="block text-[14px] font-light transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 text-[#545454] group-hover:text-[#1a1a1a]">
               ✕
             </span>
           </div>
 
           {/* Subrayado unificado */}
-          <span className={`absolute left-0 bottom-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full ${isDarkBg ? 'bg-white' : 'bg-[#1a1a1a]'}`} />
+          <span className="absolute left-0 bottom-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full bg-[#1a1a1a]" />
         </Link>
 
       </div>
