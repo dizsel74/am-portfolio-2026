@@ -31,7 +31,7 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                 whileHover={{ scale: 1.03, y: -2 }}
                 whileTap={{ scale: 0.96 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                className="group relative flex items-center gap-2.5 bg-[#1a1a1a] text-white px-5 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-[#333] hover:border-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 overflow-hidden cursor-pointer"
+                className="group relative flex items-center gap-2.5 bg-[#1a1a1a] text-white px-5 py-3 rounded-full text-[9px] md:text-[10px] uppercase tracking-[0.2em]  shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-[#333] hover:border-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 overflow-hidden cursor-pointer"
                 aria-label={
                     copied
                         ? "Email address copied to clipboard: hello@iamuxui.dev"
