@@ -38,10 +38,7 @@ function App() {
     <div id="top" className="relative min-h-screen font-instrument selection:bg-black selection:text-white overflow-x-hidden">
       <ScrollToTop />
 
-      {/* BOTÓN FLOTANTE GLOBAL DE LA LP */}
-      <FloatingEmailButton showFloatingBtn={true} />
-
-      {/* TOAST NOTIFICATION */}
+      {/* TOAST NOTIFICATION DE LA VERSIÓN ANTERIOR (Mantenido por si acaso) */}
       <div
         role="status"
         aria-live="polite"
@@ -59,6 +56,8 @@ function App() {
         {/* HOME PAGE */}
         <Route path="/" element={
           <>
+            {/* BOTÓN FLOTANTE MODO LP */}
+            <FloatingEmailButton showFloatingBtn={true} />
             <Header />
             <main id="home" className="pt-32 md:pt-48 lg:pt-64">
               {/* ELIMINADO pb-4 para que el contenido llegue al borde */}
