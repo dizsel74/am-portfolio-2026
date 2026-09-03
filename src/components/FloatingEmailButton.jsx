@@ -67,7 +67,6 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                                 className="whitespace-nowrap text-white font-semibold flex items-center justify-center"
                             >
                                 <span className="hidden md:inline">Copied!</span>
-                                <span className="md:hidden">✓</span>
                             </motion.span>
                         ) : (
                             <motion.span
