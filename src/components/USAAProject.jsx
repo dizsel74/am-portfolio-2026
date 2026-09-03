@@ -54,14 +54,14 @@ const USAAProject = () => {
 
               {/* Columna Izquierda: Título */}
               <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0">
-                <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+                <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
                   What I learned
                 </h3>
               </div>
 
               {/* Columna Derecha: Párrafo */}
               <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-                <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
+                <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
                   By architecting a <strong className="font-semibold text-[#1a1a1a]">multi-tier design token system</strong> I was able to <strong className="font-semibold text-[#1a1a1a]">achive consistency</strong> across the entire digital ecosystem, I eliminated UI drift across distinct lines of business, establishing a <strong className="font-semibold text-[#1a1a1a]">single source of truth</strong> for design and engineering teams while upholding strict <strong className="font-semibold text-[#1a1a1a]">WCAG-compliant standards</strong>.
                 </p>
               </div>
@@ -92,13 +92,13 @@ const USAAProject = () => {
               </h2>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               Consistency Across a Decade of Growth
             </h3>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-            <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
+            <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
               Through years of rapid growth, USAA's digital ecosystem became a patchwork of different eras. This fragmentation across lines of business not only hurt the online experience but also led to a <span className="text-black font-semibold">70% increase in support calls</span> for simple transactions.
             </p>
 
@@ -125,13 +125,13 @@ const USAAProject = () => {
               </h2>
               <div className="h-[1px] bg-[#333333] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-white">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-white">
               Establishing a Single Source of Truth
             </h3>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-            <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
+            <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
               To bridge this decade-long gap, Reveille <span className="text-white font-semibold">Design System</span> was born. A strategic framework designed to align design, engineering, and business objectives.
             </p>
 
@@ -203,7 +203,7 @@ const USAAProject = () => {
               </h2>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               The Impact of a Unified System
             </h3>
           </div>

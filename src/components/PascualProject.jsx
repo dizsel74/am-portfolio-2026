@@ -50,14 +50,14 @@ const PascualProject = () => {
 
               {/* Columna Izquierda: Título */}
               <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0">
-                <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+                <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
                   What I learned
                 </h3>
               </div>
 
               {/* Columna Derecha: Párrafo */}
               <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-                <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
+                <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
                   Enterprise unifications succeed when consumer clarity comes first: restructuring complex legacy hierarchies into a unified digital ecosystem that drives cross-brand exploration and trust.
                 </p>
               </div>
@@ -87,13 +87,13 @@ const PascualProject = () => {
               </h2>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               Humanizing Food Tech
             </h3>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-            <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
+            <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
               Pascual needed to unify its diverse product portfolio under a single, cohesive digital identity. The goal was to transition from a corporate-heavy site to a <span className="text-black font-semibold">consumer-centric platform</span> that emphasizes sustainability and transparency in the food chain.
             </p>
 
@@ -120,13 +120,13 @@ const PascualProject = () => {
               </h2>
               <div className="h-[1px] bg-[#333333] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-white">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-white">
               Trust Through Design
             </h3>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-            <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
+            <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
               Architected a modular system that enables rich storytelling while maintaining technical precision. Through soft interactions and a clean, <span className="text-white font-semibold">grid-based layout</span>, this design reinforces the brand's core values of health and proximity.
             </p>
 
@@ -198,7 +198,7 @@ const PascualProject = () => {
               </h2>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               Unifying a Diverse Portfolio
             </h3>
           </div>

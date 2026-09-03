@@ -50,14 +50,14 @@ const CafeProject = () => {
 
               {/* Columna Izquierda: Título */}
               <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0">
-                <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+                <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
                   What I learned
                 </h3>
               </div>
 
               {/* Columna Derecha: Párrafo */}
               <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-                <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
+                <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
                   Luxury B2C UX is about emotional connection and performance: transforming complex, modular configuration logic into an effortless, real-time visual journey that accelerates high-intent conversion.
                 </p>
               </div>
@@ -87,13 +87,13 @@ const CafeProject = () => {
               </h2>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               Elevating Digital Taste
             </h3>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-            <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
+            <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
               CAFÉ is not just about appliances; it's about <span className="text-black font-semibold">personal expression</span>. The digital challenge was to build a customization tool that allowed users to mix and match finishes and hardware with zero friction, making the online configuration as tactile as the real product.
             </p>
 
@@ -120,13 +120,13 @@ const CafeProject = () => {
               </h2>
               <div className="h-[1px] bg-[#333333] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-white">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-white">
               The Art of Customization
             </h3>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-            <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
+            <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
               Developed a <span className="text-white font-semibold">modular design system </span> prioritizing whitespace and high-contrast elements to echo the brand's premium hardware finishes. Every interaction was meticulously crafted to ensure a deliberate and sophisticated user experience.
             </p>
 
@@ -196,7 +196,7 @@ const CafeProject = () => {
               </h2>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               Redefining Digital Luxury
             </h3>
           </div>

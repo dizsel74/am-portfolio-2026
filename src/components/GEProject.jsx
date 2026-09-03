@@ -50,14 +50,14 @@ const GEProject = () => {
 
               {/* Columna Izquierda: Título */}
               <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0">
-                <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+                <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
                   What I learned
                 </h3>
               </div>
 
               {/* Columna Derecha: Párrafo */}
               <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-                <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
+                <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-[#4A4A4A] font-normal">
                   Global expansion requires architectural flexibility: designing layout systems that seamlessly absorb bilingual content variations (EN/FR) without sacrificing visual hierarchy or brand consistency.
                 </p>
               </div>
@@ -87,13 +87,13 @@ const GEProject = () => {
               </h2>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               Modernizing a Legacy Icon
             </h3>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-            <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
+            <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-[#4A4A4A] mb-16">
               GE Appliances needed to translate its heritage of reliability into a modern digital experience. The challenge was to create a visual language that felt <span className="text-black font-semibold">innovative yet familiar</span>, ensuring that the online journey matched the premium quality of their physical products.
             </p>
 
@@ -120,13 +120,13 @@ const GEProject = () => {
               </h2>
               <div className="h-[1px] bg-[#333333] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-white">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-white">
               Digital Craftsmanship
             </h3>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
-            <p className="text-[clamp(18px,2vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
+            <p className="text-[clamp(15px,4vw,22px)] leading-relaxed text-gray-400 mb-12 lg:mb-16">
               Led the <span className="text-white font-semibold">visual-first strategy</span> for this project, leveraging high-fidelity imagery and a refined typographic scale to deliver a seamless interface that reinforces the brand's social and product values.
             </p>
 
@@ -197,7 +197,7 @@ const GEProject = () => {
               </h2>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[56px] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               Elevating a Global Brand Experience
             </h3>
           </div>

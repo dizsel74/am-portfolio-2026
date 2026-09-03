@@ -41,17 +41,17 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                 whileHover={{ scale: 1.03, y: -2 }}
                 whileTap={{ scale: 0.96 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                className="group relative flex items-center gap-1.5 md:gap-1.5 bg-white text-black px-3 md:px-4 py-3 rounded-full text-[9px] md:text-[10px] uppercase tracking-[0.2em] shadow-[0_8px_30px_rgb(255,255,255,0.12)] border border-[#E5E5E5] hover:border-white focus:outline-none focus-visible:ring-2 focus-visible:ring-black overflow-hidden cursor-pointer mix-blend-difference"
+                className="group relative flex items-center gap-1.5 md:gap-1.5 bg-[#1a1a1a] text-white px-3 md:px-4 py-3 rounded-full text-[9px] md:text-[10px] uppercase tracking-[0.2em] shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-[#333] ring-1 ring-white hover:border-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black overflow-hidden cursor-pointer"
                 aria-label={
                     copied
                         ? "Email address copied to clipboard: hello@iamuxui.dev"
                         : "Email Arturo at hello@iamuxui.dev (also copies address to clipboard)"
                 }
             >
-                {/* Radar / Status Dot: Inverted green (#EF467E) renders as Green (#10B981) on difference */}
+                {/* Radar / Status Dot: pulso discreto de disponibilidad */}
                 <span className={`relative flex h-2 w-2 transition-opacity duration-300 ${copied ? 'opacity-0' : 'opacity-100'}`} aria-hidden="true">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#EF467E] opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#EF467E]" />
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10B981]" />
                 </span>
 
                 {/* Contenedor con altura fija para la transición vertical del texto */}
@@ -64,7 +64,7 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                                 animate={{ y: 0, opacity: 1 }}
                                 exit={{ y: -14, opacity: 0 }}
                                 transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-                                className="whitespace-nowrap text-black font-semibold flex items-center justify-center"
+                                className="whitespace-nowrap text-white font-semibold flex items-center justify-center"
                             >
                                 <span className="hidden md:inline">Copied!</span>
                                 <svg className="md:hidden w-3.5 h-3.5" viewBox="0 -960 960 960" fill="currentColor">
@@ -78,7 +78,7 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                                 animate={{ y: 0, opacity: 1 }}
                                 exit={{ y: -14, opacity: 0 }}
                                 transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-                                className="whitespace-nowrap text-[#131313] group-hover:text-black flex items-center justify-center"
+                                className="whitespace-nowrap text-[#ECECEC] group-hover:text-white flex items-center justify-center"
                             >
                                 <span className="hidden md:inline">Email me</span>
                                 <svg className="md:hidden w-3.5 h-3.5" viewBox="0 -960 960 960" fill="currentColor">
@@ -99,7 +99,7 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                                 animate={{ scale: 1, opacity: 1, rotate: 0 }}
                                 exit={{ scale: 0.5, opacity: 0 }}
                                 transition={{ type: "spring", stiffness: 500, damping: 20 }}
-                                className="text-[12px] text-[#EF467E] font-bold"
+                                className="text-[12px] text-[#10B981] font-bold"
                                 aria-hidden="true"
                             >
                                 ✓
@@ -111,7 +111,7 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -4 }}
                                 transition={{ duration: 0.2 }}
-                                className="text-[12px] text-[#5C5C5C] group-hover:text-black transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                                className="text-[12px] text-[#A3A3A3] group-hover:text-white transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                                 aria-hidden="true"
                             >
                                 ↗
