@@ -35,7 +35,7 @@ const BackToTop = ({ showFloatingBtn = true }) => {
         x: (isVisible && showFloatingBtn) ? 0 : 20
       }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed right-4 md:right-8 top-1/2 -translate-y-1/2 z-[80] h-40 w-8 flex justify-center group cursor-pointer ${!(isVisible && showFloatingBtn) && 'pointer-events-none'}`}
+      className={`fixed right-1 md:right-2 lg:right-8 top-1/2 -translate-y-1/2 z-[80] h-40 w-8 flex justify-center group cursor-pointer ${!(isVisible && showFloatingBtn) && 'pointer-events-none'}`}
       onClick={scrollToTop}
       aria-label="Scroll back to top"
       role="button"
