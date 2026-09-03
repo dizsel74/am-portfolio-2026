@@ -49,10 +49,12 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                 }
             >
                 {/* Radar / Status Dot: pulso discreto de disponibilidad */}
-                <span className="relative flex h-2 w-2" aria-hidden="true">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10B981]" />
-                </span>
+                {!copied && (
+                    <span className="relative flex h-2 w-2" aria-hidden="true">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75" />
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10B981]" />
+                    </span>
+                )}
 
                 {/* Contenedor con altura fija para la transición vertical del texto */}
                 <div className="relative h-[16px] min-w-0 md:min-w-[65px] flex items-center overflow-hidden">
@@ -67,6 +69,9 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                                 className="whitespace-nowrap text-white font-semibold flex items-center justify-center"
                             >
                                 <span className="hidden md:inline">Copied!</span>
+                                <svg className="md:hidden w-3.5 h-3.5" viewBox="0 -960 960 960" fill="currentColor">
+                                    <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+                                </svg>
                             </motion.span>
                         ) : (
                             <motion.span
