@@ -1,9 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function FloatingEmailButton({ showFloatingBtn }) {
     const [copied, setCopied] = useState(false);
+    const [hasScrolled, setHasScrolled] = useState(false);
     const email = "hello@iamuxui.dev";
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setHasScrolled(window.scrollY > 300);
+        };
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Revisar estado inicial
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const handleContactClick = async () => {
         try {
@@ -20,9 +30,9 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
     return (
         <aside
             aria-label="Contact options"
-            className={`fixed right-8 bottom-12 z-50 transition-all duration-500 transform ${showFloatingBtn
-                    ? 'translate-y-0 opacity-100 pointer-events-auto'
-                    : 'translate-y-20 opacity-0 pointer-events-none'
+            className={`fixed right-8 bottom-12 z-50 transition-all duration-500 transform ${(showFloatingBtn && hasScrolled)
+                ? 'translate-y-0 opacity-100 pointer-events-auto'
+                : 'translate-y-20 opacity-0 pointer-events-none'
                 }`}
         >
             <motion.a
@@ -31,7 +41,7 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                 whileHover={{ scale: 1.03, y: -2 }}
                 whileTap={{ scale: 0.96 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                className="group relative flex items-center gap-2.5 bg-[#1a1a1a] text-white px-5 py-3 rounded-full text-[9px] md:text-[10px] uppercase tracking-[0.2em]  shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-[#333] hover:border-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 overflow-hidden cursor-pointer"
+                className="group relative flex items-center gap-1.5 md:gap-2 bg-[#1a1a1a] text-white px-3 md:px-5 py-3 rounded-full text-[9px] md:text-[10px] uppercase tracking-[0.2em]  shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-[#333] hover:border-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 overflow-hidden cursor-pointer"
                 aria-label={
                     copied
                         ? "Email address copied to clipboard: hello@iamuxui.dev"
@@ -45,7 +55,7 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                 </span>
 
                 {/* Contenedor con altura fija para la transición vertical del texto */}
-                <div className="relative h-[16px] min-w-[70px] flex items-center overflow-hidden">
+                <div className="relative h-[16px] min-w-0 md:min-w-[65px] flex items-center overflow-hidden">
                     <AnimatePresence mode="wait" initial={false}>
                         {copied ? (
                             <motion.span
@@ -54,9 +64,10 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                                 animate={{ y: 0, opacity: 1 }}
                                 exit={{ y: -14, opacity: 0 }}
                                 transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-                                className="whitespace-nowrap text-white font-semibold"
+                                className="whitespace-nowrap text-white font-semibold flex items-center justify-center"
                             >
-                                Copied!
+                                <span className="hidden md:inline">Copied!</span>
+                                <span className="md:hidden">✓</span>
                             </motion.span>
                         ) : (
                             <motion.span
@@ -65,9 +76,12 @@ export default function FloatingEmailButton({ showFloatingBtn }) {
                                 animate={{ y: 0, opacity: 1 }}
                                 exit={{ y: -14, opacity: 0 }}
                                 transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-                                className="whitespace-nowrap text-[#ECECEC] group-hover:text-white"
+                                className="whitespace-nowrap text-[#ECECEC] group-hover:text-white flex items-center justify-center"
                             >
-                                Email me
+                                <span className="hidden md:inline">Email me</span>
+                                <svg className="md:hidden w-3.5 h-3.5" viewBox="0 -960 960 960" fill="currentColor">
+                                    <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z" />
+                                </svg>
                             </motion.span>
                         )}
                     </AnimatePresence>
