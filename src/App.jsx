@@ -9,6 +9,7 @@ import USAAProject from './components/USAAProject';
 import GEProject from './components/GEProject';
 import CafeProject from './components/CafeProject';
 import PascualProject from './components/PascualProject';
+import FloatingEmailButton from './components/FloatingEmailButton';
 
 // Componente para resetear el scroll automáticamente al cambiar de ruta
 const ScrollToTop = () => {
@@ -36,6 +37,9 @@ function App() {
   return (
     <div id="top" className="relative min-h-screen font-instrument selection:bg-black selection:text-white overflow-x-hidden">
       <ScrollToTop />
+
+      {/* BOTÓN FLOTANTE GLOBAL DE LA LP */}
+      <FloatingEmailButton showFloatingBtn={true} />
 
       {/* TOAST NOTIFICATION */}
       <div

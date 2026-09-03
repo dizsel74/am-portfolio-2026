@@ -2,18 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import GridContainer from './GridContainer';
 import ProjectNav from './ProjectNav';
+import FloatingEmailButton from './FloatingEmailButton';
 
 const USAAProject = () => {
   const [showFloatingBtn, setShowFloatingBtn] = useState(true);
   const nextProjectRef = useRef(null);
-  const [copied, setCopied] = useState(false);
 
-  const handleEmailClick = () => {
-    navigator.clipboard.writeText("hello@iamuxui.dev").then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 3000);
-    }).catch(err => console.error("Could not copy text:", err));
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,28 +31,7 @@ const USAAProject = () => {
 
 
       {/* BOTÓN FLOTANTE */}
-      <a
-        href="mailto:hello@iamuxui.dev?subject=Design%20Opportunity%20/%20Inquiry"
-        onClick={handleEmailClick}
-        className={`fixed right-8 bottom-12 z-50 bg-[#1a1a1a] text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium transition-all duration-500 transform shadow-md hover:bg-black hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 ${showFloatingBtn ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-20 opacity-0 pointer-events-none'
-          }`}
-        aria-label="Send email to hello@iamuxui.dev"
-      >
-        Email Me
-      </a>
-
-      {/* TOAST NOTIFICATION */}
-      <div
-        role="status"
-        aria-live="polite"
-        className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-[100] bg-black text-white px-6 py-3 rounded-full text-[12px] uppercase tracking-[0.1em] transition-all duration-500 transform ${copied ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0 pointer-events-none'
-          }`}
-      >
-        <span className="flex items-center gap-2">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Email address copied
-        </span>
-      </div>
+      <FloatingEmailButton showFloatingBtn={showFloatingBtn} />
 
       {/* 0. HERO SECTION */}
       <section className="mb-24 lg:mb-40">
