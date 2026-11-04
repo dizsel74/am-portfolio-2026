@@ -106,177 +106,64 @@ function App() {
 
                 <div className="flex flex-col gap-16 md:gap-24 lg:gap-[160px]">
 
-                  {/* PROYECTO 01 - USAA */}
-                  <GridContainer>
-                    <div className="col-span-12 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 items-center group">
-                      <div className="col-span-1 md:col-span-6 lg:col-span-3 flex flex-col gap-8 order-2 lg:order-1">
+                  {/* PROYECTOS. Para activar un caso de estudio agrega su ruta en "to"; con to: null el CTA muestra "CASE STUDY COMING SOON". */}
+                  {[
+                    { id: '01', role: 'UI DESIGNER', title: 'USAA', desc: 'Achieving cross-platform UX & UI consistency through Design System.', img: '/usaa_preview.webp', alt: 'USAA', to: '/work/usaa' },
+                    { id: '02', role: 'UX/UI DESIGN', title: 'GE Appliances', desc: "Visual redesign for brand's digital experience...", img: '/GE_1600X1000.webp', alt: 'GE', to: '/work/ge' },
+                    { id: '03', role: 'UI DESIGNER', title: 'CAFÉ Appliances', desc: 'Modern and elegant aesthetic that defines luxury...', img: '/cafe_1600X1000.webp', alt: 'Café', to: '/work/cafe' },
+                    { id: '04', role: 'UX RESEARCHER & UX/UI DESIGNER', title: 'Pascual', desc: 'UX/UI design and development for the B2B platform...', img: '/pascual_1600X1000.webp', alt: 'Pascual', to: '/work/pascual' },
+                    { id: '05', role: 'PRODUCT DESIGNER · CONCEPT', title: 'Black Sheep', desc: 'Tattoo artist matching app: reveal your style, then book the artist who specializes in it.', img: '/blacksheep_1600X1000.webp', alt: 'Black Sheep app screens showing artist matches and session booking', to: null },
+                    { id: '06', role: 'UX AUDIT & REDESIGN', title: 'gogolf', desc: 'Removing friction from sign-up and tee-time booking for Mexico’s first golf marketplace.', img: '/gogolf_1600X1000.webp', alt: 'gogolf landing page redesign with tee-time search', to: null },
+                    { id: '07', role: 'PRODUCT & BRAND DESIGNER · ASSESSMENT', title: 'Flex Academy', desc: 'One landing page, two audiences, one lead: a webinar for 9-to-5 leavers and a strategy call for operators.', img: '/flex_1600X1000.webp', alt: 'Flex Academy Launch playbook section with five steps and an apartment photo', to: null },
+                    { id: '08', role: 'PRODUCT DESIGNER · CLIENT', title: 'Horacio Nansen', desc: 'Audit and redesign of a painter’s Canva site into a gallery-style online catalog.', img: '/horacio_1600X1000.webp', alt: 'Horacio Nansen catalog hero over a detail of one of his paintings', to: null },
+                    { id: '09', role: 'PRODUCT UX/UI DESIGNER · LIVE', title: 'Kuala', desc: 'Sales landing for a 3D-printed clicker: one clear buying path that closes on WhatsApp. Live at kuala.fun.', img: '/kuala_1600X1000.webp', alt: 'Kuala landing page shown on laptop, tablet and phone', to: null },
+                  ].map((p, i) => {
+                    const textFirst = i % 2 === 0; // 05, 07, 09 = texto a la izquierda (como USAA); 06, 08 = imagen a la izquierda (como GE)
+                    const media = (
+                      <div className={`col-span-1 md:col-span-6 lg:col-span-7 overflow-hidden order-1 ${textFirst ? 'lg:col-start-6 lg:order-3' : ''}`}>
+                        <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
+                          {p.to ? (
+                            <Link to={p.to} tabIndex="-1" aria-hidden="true" className="block aspect-[16/10] bg-[#F5F5F5] overflow-hidden cursor-pointer">
+                              <img src={p.img} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt={p.alt} />
+                            </Link>
+                          ) : (
+                            <img src={p.img} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt={p.alt} />
+                          )}
+                        </div>
+                      </div>
+                    );
+                    const text = (
+                      <div className={`col-span-1 md:col-span-6 lg:col-span-3 flex flex-col gap-8 order-2 ${textFirst ? 'lg:order-1' : 'lg:col-start-10'}`}>
                         <div className="flex flex-col gap-3">
                           <div className="flex items-center gap-4 overflow-hidden">
-                            <span className="text-[12px] text-[#545454] uppercase tracking-[0.1em]">01 / UI DESIGNER</span>
+                            <span className="text-[12px] text-[#545454] uppercase tracking-[0.1em]">{p.id} / {p.role}</span>
                             <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
                           </div>
-                          <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">USAA</h3>
+                          <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">{p.title}</h3>
                         </div>
-                        <p className="text-[clamp(15px,3.5vw,22px)] text-[#4A4A4A]">Achieving cross-platform UX & UI consistency through Design System.</p>
-                        <Link
-                          to="/work/usaa"
-                          aria-label="Explore USAA Case Study"
-                          className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                          EXPLORE CASE STUDY
-
-                          {/* FLECHA CON MOVIMIENTO DIAGONAL */}
-                          <span
-                            aria-hidden="true"
-                            className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
-                            ↗
-                          </span>
-
-                          {/* SUBRAYADO UNIFICADO */}
-                          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 group-hover:w-full" />
-                        </Link>
-                      </div>
-                      <div className="col-span-1 md:col-span-6 lg:col-span-7 lg:col-start-6 overflow-hidden order-1 lg:order-3">
-                        <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
+                        <p className="text-[clamp(15px,3.5vw,22px)] text-[#4A4A4A]">{p.desc}</p>
+                        {p.to ? (
                           <Link
-                            to="/work/usaa"
-                            tabIndex="-1"
-                            aria-hidden="true"
-                            className="block aspect-[16/10] bg-[#F5F5F5] overflow-hidden cursor-pointer">`
-                            <img src="/usaa_preview.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="USAA" />
+                            to={p.to}
+                            aria-label={`Explore ${p.title} Case Study`}
+                            className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
+                            EXPLORE CASE STUDY
+                            <span aria-hidden="true" className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">↗</span>
+                            <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 group-hover:w-full" />
                           </Link>
-                        </div>
+                        ) : (
+                          <span className="text-[12px] text-[#545454] tracking-[0.2em]">CASE STUDY COMING SOON</span>
+                        )}
                       </div>
-                    </div>
-                  </GridContainer>
-
-                  {/* PROYECTO 02 - GE */}
-                  <GridContainer>
-                    <div className="col-span-12 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 items-center group">
-                      <div className="col-span-1 md:col-span-6 lg:col-span-7 overflow-hidden order-1">
-                        <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
-                          <Link
-                            to="/work/ge"
-                            tabIndex="-1"
-                            aria-hidden="true"
-                            className="block aspect-[16/10] bg-[#F5F5F5] overflow-hidden cursor-pointer">`
-                            <img src="/GE_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="GE" />
-                          </Link>
+                    );
+                    return (
+                      <GridContainer key={p.id}>
+                        <div className="col-span-12 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 items-center group">
+                          {textFirst ? <>{text}{media}</> : <>{media}{text}</>}
                         </div>
-                      </div>
-                      <div className="col-span-1 md:col-span-6 lg:col-span-3 lg:col-start-10 flex flex-col gap-8 order-2">
-                        <div className="flex flex-col gap-3">
-                          <div className="flex items-center gap-4 overflow-hidden">
-                            <span className="text-[12px] text-[#545454] uppercase tracking-[0.1em]">02 / UX/UI DESIGN</span>
-                            <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
-                          </div>
-                          <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">GE Appliances</h3>
-                        </div>
-                        <p className="text-[clamp(15px,3.5vw,22px)] text-[#4A4A4A]">Visual redesign for brand's digital experience...</p>
-                        <Link
-                          to="/work/ge"
-                          aria-label="Explore GE Case Study"
-                          className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                          EXPLORE CASE STUDY
-
-                          {/* FLECHA CON MOVIMIENTO DIAGONAL */}
-                          <span
-                            aria-hidden="true"
-                            className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
-                            ↗
-                          </span>
-
-                          {/* SUBRAYADO UNIFICADO */}
-                          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 group-hover:w-full" />
-                        </Link>
-                      </div>
-                    </div>
-                  </GridContainer>
-
-                  {/* PROYECTO 03 - CAFÉ */}
-                  <GridContainer>
-                    <div className="col-span-12 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 items-center group">
-                      <div className="col-span-1 md:col-span-6 lg:col-span-3 flex flex-col gap-8 order-2 lg:order-1">
-                        <div className="flex flex-col gap-3">
-                          <div className="flex items-center gap-4 overflow-hidden">
-                            <span className="text-[12px] text-[#545454] uppercase tracking-[0.1em]">03 / UI DESIGNER</span>
-                            <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
-                          </div>
-                          <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">CAFÉ Appliances</h3>
-                        </div>
-                        <p className="text-[clamp(15px,3.5vw,22px)] text-[#4A4A4A]">Modern and elegant aesthetic that defines luxury...</p>
-                        <Link
-                          to="/work/cafe"
-                          aria-label="Explore CAFÉ Case Study"
-                          className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                          EXPLORE CASE STUDY
-
-                          {/* FLECHA CON MOVIMIENTO DIAGONAL */}
-                          <span
-                            aria-hidden="true"
-                            className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
-                            ↗
-                          </span>
-
-                          {/* SUBRAYADO UNIFICADO */}
-                          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 group-hover:w-full" />
-                        </Link>
-                      </div>
-                      <div className="col-span-1 md:col-span-6 lg:col-span-7 lg:col-start-6 overflow-hidden order-1 lg:order-3">
-                        <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
-                          <Link
-                            to="/work/cafe"
-                            tabIndex="-1"
-                            aria-hidden="true"
-                            className="block aspect-[16/10] bg-[#F5F5F5] overflow-hidden cursor-pointer">`
-                            <img src="/cafe_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="Café" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </GridContainer>
-
-                  {/* PROYECTO 04 - PASCUAL */}
-                  <GridContainer>
-                    <div className="col-span-12 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 items-center group">
-                      <div className="col-span-1 md:col-span-6 lg:col-span-7 overflow-hidden order-1">
-                        <div className="aspect-[16/10] bg-[#F5F5F5] overflow-hidden">
-                          <Link
-                            to="/work/pascual"
-                            tabIndex="-1"
-                            aria-hidden="true"
-                            className="block aspect-[16/10] bg-[#F5F5F5] overflow-hidden cursor-pointer">`
-                            <img src="/pascual_1600X1000.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" alt="Pascual" />
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="col-span-1 md:col-span-6 lg:col-span-3 lg:col-start-10 flex flex-col gap-8 order-2">
-                        <div className="flex flex-col gap-3">
-                          <div className="flex items-center gap-4 overflow-hidden">
-                            <span className="text-[12px] text-[#545454] uppercase tracking-[0.1em]">04 / UX RESEARCHER & UX/UI DESIGNER</span>
-                            <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
-                          </div>
-                          <h3 className="text-[clamp(24px,2.5vw,32px)] uppercase font-medium tracking-[0.1em]">Pascual</h3>
-                        </div>
-                        <p className="text-[clamp(15px,3.5vw,22px)] text-[#4A4A4A]">UX/UI design and development for the B2B platform...</p>
-                        <Link
-                          to="/work/pascual"
-                          aria-label="Explore Pascual Case Study"
-                          className="group/link relative inline-flex items-center text-[12px] text-[#545454] hover:text-[#1a1a1a] transition-colors w-fit tracking-[0.2em]">
-                          EXPLORE CASE STUDY
-
-                          {/* FLECHA CON MOVIMIENTO DIAGONAL */}
-                          <span
-                            aria-hidden="true"
-                            className="text-[14px] transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] transform group-hover:-translate-y-1 group-hover:translate-x-1">
-                            ↗
-                          </span>
-
-                          {/* SUBRAYADO UNIFICADO */}
-                          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 group-hover:w-full" />
-                        </Link>
-                      </div>
-                    </div>
-                  </GridContainer>
+                      </GridContainer>
+                    );
+                  })}
 
                 </div>
               </section>
@@ -305,7 +192,7 @@ function App() {
 
                       {/* Párrafo 1 */}
                       <p className="text-[clamp(15px,3.5vw,22px)] leading-[1.6] font-normal tracking-[0.05em] ">
-                        <span className="font-medium">UX/UI Product Designer & Researcher</span> with background in <span className="font-medium">Computer Science Engineering.</span> This allows me to bridge the gap between high leve user research and production ready interfaces.
+                        <span className="font-medium">UX/UI Product Designer & Researcher</span> with background in <span className="font-medium">Computer Science Engineering.</span> This allows me to bridge the gap between high level user research and production ready interfaces.
                       </p>
 
                       {/* Párrafo 2 */}

@@ -37,7 +37,7 @@ const GEProject = () => {
       <section className="mb-24 lg:mb-40">
         <GridContainer>
           <div className="col-span-12 lg:col-span-8">
-            <span className="text-[12px] uppercase tracking-[0.2em] text-[#767676] font-medium">
+            <span className="text-[12px] uppercase tracking-[0.2em] text-[#6B6B6B] font-medium">
               Case Study / Digital Evolution
             </span>
             <h1 className="text-[clamp(60px,10vw,140px)] leading-[0.85] font-normal mt-6 mb-12 tracking-[-0.04em] text-[#1a1a1a]">
@@ -50,9 +50,9 @@ const GEProject = () => {
 
               {/* Columna Izquierda: Título */}
               <div className="col-span-12 lg:col-span-4 mb-8 lg:mb-0">
-                <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+                <h2 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
                   What I learned
-                </h3>
+                </h2>
               </div>
 
               {/* Columna Derecha: Párrafo */}
@@ -82,14 +82,14 @@ const GEProject = () => {
         <GridContainer>
           <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
             <div className="flex items-center gap-4 mb-8">
-              <h2 className="text-[12px] uppercase tracking-[0.2em] text-[#767676] whitespace-nowrap">
+              <p className="text-[12px] uppercase tracking-[0.2em] text-[#6B6B6B] whitespace-nowrap">
                 01 / The Challenge
-              </h2>
+              </p>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+            <h2 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               Modernizing a Legacy Icon
-            </h3>
+            </h2>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
@@ -100,9 +100,9 @@ const GEProject = () => {
             <div className="flex flex-col">
               {['Legacy Visual Debt', 'Inconsistent Brand Voice', 'Complex Navigation Patterns'].map((point, i) => (
                 <div key={i} className="group py-6 flex items-center cursor-default border-t border-[#F0F0F0] last:border-b">
-                  <h4 className="text-[14px] uppercase leading-none tracking-[0.1em] text-[#1a1a1a] transition-all duration-500 ease-out group-hover:translate-x-3 group-hover:text-[#767676]">
-                    <span className="text-[#888888] mr-2">0{i + 1} /</span>{point}
-                  </h4>
+                  <h3 className="text-[14px] uppercase leading-none tracking-[0.1em] text-[#1a1a1a] transition-all duration-500 ease-out group-hover:translate-x-3 group-hover:text-[#767676]">
+                    <span className="text-[#6B6B6B] mr-2">0{i + 1} /</span>{point}
+                  </h3>
                 </div>
               ))}
             </div>
@@ -115,14 +115,14 @@ const GEProject = () => {
         <GridContainer>
           <div className="col-span-12 lg:col-span-4 mb-16 lg:mb-0">
             <div className="flex items-center gap-4 mb-8">
-              <h2 className="text-[12px] uppercase tracking-[0.2em] whitespace-nowrap text-gray-400">
+              <p className="text-[12px] uppercase tracking-[0.2em] whitespace-nowrap text-gray-400">
                 02 / The Solution
-              </h2>
+              </p>
               <div className="h-[1px] bg-[#333333] flex-grow" />
             </div>
-            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-white">
+            <h2 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-white">
               Digital Craftsmanship
-            </h3>
+            </h2>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
@@ -138,10 +138,10 @@ const GEProject = () => {
               ].map((item, i) => (
                 <div key={i} className="group flex flex-col cursor-default">
                   <div className="h-[1px] bg-[#333333] w-full mb-6 group-hover:bg-[#555555] transition-colors duration-500" />
-                  <h4 className="text-[12px] uppercase tracking-[0.1em] text-white mb-4 transition-all duration-500 group-hover:translate-x-2">
+                  <h3 className="text-[12px] uppercase tracking-[0.1em] text-white mb-4 transition-all duration-500 group-hover:translate-x-2">
                     {item.title}
-                  </h4>
-                  <p className="text-[14px] leading-relaxed text-gray-500 group-hover:text-gray-300 transition-colors">
+                  </h3>
+                  <p className="text-[14px] leading-relaxed text-gray-400 group-hover:text-gray-300 transition-colors">
                     {item.caption}
                   </p>
                 </div>
@@ -156,28 +156,29 @@ const GEProject = () => {
         <GridContainer>
           <div className="col-span-12 mb-16">
             <div className="flex items-center gap-4">
-              <h2 className="text-[12px] uppercase tracking-[0.2em] text-[#767676] whitespace-nowrap">
+              <h2 className="text-[12px] uppercase tracking-[0.2em] text-[#6B6B6B] whitespace-nowrap">
                 03 / Visual showcase
               </h2>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
           </div>
 
-          <div className="col-span-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+          <div className="col-span-12 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-14">
             {[
               { title: 'Premium e-commerce desktop interface redesign for GE Appliances showcasing high-fidelity product imagery and clean typography', fileName: 'ge_ui_1.webp', caption: 'FIG. 01 — PREMIUM E-COMMERCE INTERFACE REDESIGN.' },
               { title: 'Responsive mobile layout for GE Appliances displaying fluid product galleries and intuitive navigation patterns', fileName: 'ge_mobile.webp', caption: 'FIG. 02 — RESPONSIVE EXPERIENCE & FLUID LAYOUTS.' },
+              { title: 'French version of the GE Appliances Canada community page, keeping the same layout and hierarchy with longer French copy', fileName: 'ge_ui_fr.webp', caption: 'FIG. 03 — FRENCH VERSION: SAME LAYOUT, LONGER COPY (EN/FR).', fit: 'contain' },
             ].map((item, i) => (
               <div key={i} className="flex flex-col gap-6">
-                <div className="aspect-[4/3] bg-white border border-[#EEEEEE] overflow-hidden group">
+                <div className="aspect-square bg-white border border-[#EEEEEE] overflow-hidden transition-all duration-500 hover:border-[#CCCCCC] group">
                   <img
                     src={`/${item.fileName}`}
                     alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+                    className={`w-full h-full ${item.fit === 'contain' ? 'object-contain' : 'object-cover'} transition-transform duration-700 ease-in-out group-hover:scale-110`}
                   />
                 </div>
                 <div className="border-b border-[#EEEEEE] pb-6">
-                  <p className="text-[10px] leading-relaxed uppercase tracking-[0.15em] text-[#888888] font-medium">
+                  <p className="text-[12px] leading-relaxed uppercase tracking-[0.15em] text-[#6B6B6B] font-medium">
                     {item.caption}
                   </p>
                 </div>
@@ -192,14 +193,14 @@ const GEProject = () => {
         <GridContainer>
           <div className="col-span-12 lg:col-span-4 mb-16 lg:mb-0">
             <div className="flex items-center gap-4 mb-8">
-              <h2 className="text-[12px] uppercase tracking-[0.2em] text-[#767676] whitespace-nowrap">
+              <p className="text-[12px] uppercase tracking-[0.2em] text-[#6B6B6B] whitespace-nowrap">
                 04 / results & impact
-              </h2>
+              </p>
               <div className="h-[1px] bg-[#F0F0F0] flex-grow" />
             </div>
-            <h3 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
+            <h2 className="text-[clamp(32px,6vw,56px)] font-medium leading-[1.2] tracking-tight text-[#1a1a1a]">
               Elevating a Global Brand Experience
-            </h3>
+            </h2>
           </div>
 
           <div className="col-span-12 lg:col-start-6 lg:col-span-7">
@@ -214,7 +215,7 @@ const GEProject = () => {
                   <span className="text-6xl font-light tracking-tighter text-[#1a1a1a] transition-all group-hover:translate-x-3 group-hover:text-[#767676]">
                     {item.value}
                   </span>
-                  <p className="text-[14px] leading-relaxed tracking-[0.1em] text-[#767676] mt-6  font-medium">
+                  <p className="text-[14px] leading-relaxed tracking-[0.1em] text-[#6B6B6B] mt-6  font-medium">
                     {item.label}
                   </p>
                 </div>
@@ -228,7 +229,7 @@ const GEProject = () => {
       <section ref={nextProjectRef} className="py-24 bg-[#1a1a1a] text-white">
         <GridContainer>
           <div className="col-span-12">
-            <span className="text-[12px] uppercase tracking-[0.2em] text-[#767676] mb-12 block">
+            <span className="text-[12px] uppercase tracking-[0.2em] text-gray-400 mb-12 block">
               Next Project
             </span>
             <Link to="/work/cafe" className="group block" aria-label="Navigate to the next project: CAFÉ Luxury Experience">
@@ -258,7 +259,7 @@ const GEProject = () => {
       {/* 6.FOOTER */}
       <footer className="py-12 bg-[#1a1a1a] border-t border-[#888888]/10">
         <GridContainer>
-          <div className="col-span-12 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#888888]">
+          <div className="col-span-12 flex justify-between items-center text-[12px] uppercase tracking-[0.2em] text-[#888888]">
             <span>© 2026 ARTURO MENDOZA</span>
             <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-white transition-colors cursor-pointer" aria-label="Scroll back to the top of the page">
               Back to top ↑

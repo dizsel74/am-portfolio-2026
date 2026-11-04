@@ -36,7 +36,7 @@ const ProjectNav = () => {
           to="/"
           className="group pointer-events-auto relative inline-flex items-center gap-1.5 pb-1"
         >
-          <span className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] md:tracking-[0.3em] transition-colors duration-300 text-[#545454] group-hover:text-[#1a1a1a]">
+          <span className="text-[12px] uppercase tracking-[0.2em] md:tracking-[0.3em] transition-colors duration-300 text-[#545454] group-hover:text-[#1a1a1a]">
             Close
           </span>
 
