@@ -13,6 +13,7 @@ import BlackSheepProject from './components/BlackSheepProject';
 import GogolfProject from './components/GogolfProject';
 import FlexProject from './components/FlexProject';
 import HoracioProject from './components/HoracioProject';
+import KualaProject from './components/KualaProject';
 import FloatingEmailButton from './components/FloatingEmailButton';
 
 // Componente para resetear el scroll automáticamente al cambiar de ruta
@@ -120,7 +121,7 @@ function App() {
                     { id: '06', role: 'UX AUDIT & REDESIGN', title: 'gogolf', desc: 'Removing friction from sign-up and tee-time booking for Mexico’s first golf marketplace.', img: '/gogolf_1600X1000.webp', alt: 'gogolf landing page redesign with tee-time search', to: '/work/gogolf' },
                     { id: '07', role: 'PRODUCT & BRAND DESIGNER · ASSESSMENT', title: 'Flex Academy', desc: 'One landing page, two audiences, one lead: a webinar for 9-to-5 leavers and a strategy call for operators.', img: '/flex_1600X1000.webp', alt: 'Flex Academy Launch playbook section with five steps and an apartment photo', to: '/work/flex' },
                     { id: '08', role: 'PRODUCT DESIGNER · CLIENT', title: 'Horacio Nansen', desc: 'Audit and redesign of a painter’s Canva site into a gallery-style online catalog.', img: '/horacio_1600X1000.webp', alt: 'Horacio Nansen catalog hero over a detail of one of his paintings', to: '/work/horacio' },
-                    { id: '09', role: 'PRODUCT UX/UI DESIGNER · LIVE', title: 'Kuala', desc: 'Sales landing for a 3D-printed clicker: one clear buying path that closes on WhatsApp. Live at kuala.fun.', img: '/kuala_1600X1000.webp', alt: 'Kuala landing page shown on laptop, tablet and phone', to: null },
+                    { id: '09', role: 'PRODUCT UX/UI DESIGNER · LIVE', title: 'Kuala', desc: 'Sales landing for a 3D-printed clicker: one clear buying path that closes on WhatsApp. Live at kuala.fun.', img: '/kuala_1600X1000.webp', alt: 'Kuala landing page shown on laptop, tablet and phone', to: '/work/kuala' },
                   ].map((p, i) => {
                     const textFirst = i % 2 === 0; // 05, 07, 09 = texto a la izquierda (como USAA); 06, 08 = imagen a la izquierda (como GE)
                     const media = (
@@ -403,6 +404,7 @@ function App() {
         <Route path="/work/gogolf" element={<GogolfProject />} />
         <Route path="/work/flex" element={<FlexProject />} />
         <Route path="/work/horacio" element={<HoracioProject />} />
+        <Route path="/work/kuala" element={<KualaProject />} />
       </Routes>
 
       {/*<BackToTop /> Aqui esta global*/}
