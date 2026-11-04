@@ -238,18 +238,18 @@ const GogolfProject = () => {
         </GridContainer>
       </section>
 
-      {/* 5. NEXT PROJECT (temporal: USAA; cambiar a Flex Academy cuando exista /work/flex) */}
+      {/* 5. NEXT PROJECT */}
       <section ref={nextProjectRef} className="py-24 bg-[#1a1a1a] text-white">
         <GridContainer>
           <div className="col-span-12">
             <span className="text-[12px] uppercase tracking-[0.2em] text-gray-400 mb-12 block">
               Next Project
             </span>
-            <Link to="/work/usaa" className="group block" aria-label="Navigate to the next project: USAA Achieve Consistency">
+            <Link to="/work/flex" className="group block" aria-label="Navigate to the next project: Flex Academy Landing Page">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                 <div className="max-w-2xl">
                   <h2 className="text-[clamp(40px,8vw,90px)] font-normal leading-[1] tracking-tighter transition-all duration-700 group-hover:text-[#767676]">
-                    USAA<br />Achieve Consistency
+                    Flex Academy<br />Landing Page
                   </h2>
                 </div>
                 <div className="pb-4">
