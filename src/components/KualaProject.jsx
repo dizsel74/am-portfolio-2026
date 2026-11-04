@@ -45,7 +45,7 @@ const KualaProject = () => {
                 Case Study / Order Through WhatsApp
               </span>
               <span className="text-[12px] uppercase tracking-[0.15em] text-[#1a1a1a] border border-[#1a1a1a] rounded-full px-3 py-1">
-                Client · Live at kuala.fun · Role: Product UX/UI Designer
+                Client · kuala.fun · Role: Product UX/UI Designer
               </span>
             </div>
             <h1 className="text-[clamp(60px,12vw,140px)] leading-[0.85] font-normal mt-6 tracking-[-0.04em] text-[#1a1a1a]">
