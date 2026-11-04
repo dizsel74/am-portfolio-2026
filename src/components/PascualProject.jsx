@@ -241,11 +241,11 @@ const PascualProject = () => {
             <span className="text-[12px] uppercase tracking-[0.2em] text-gray-400 mb-12 block">
               Next Project
             </span>
-            <Link to="/work/usaa" className="group block" aria-label="Navigate to the next project: USAA Achieve Consistency">
+            <Link to="/work/blacksheep" className="group block" aria-label="Navigate to the next project: Black Sheep Tattoo Artist Matching">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
                 <div className="max-w-2xl">
                   <h2 className="text-[clamp(40px,8vw,90px)] font-normal leading-[1] tracking-tighter transition-all duration-700 group-hover:text-[#767676]">
-                    USAA<br />Achieve Consistency
+                    Black Sheep<br />Tattoo Artist Matching
                   </h2>
                 </div>
                 <div className="pb-4">

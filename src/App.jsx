@@ -9,6 +9,7 @@ import USAAProject from './components/USAAProject';
 import GEProject from './components/GEProject';
 import CafeProject from './components/CafeProject';
 import PascualProject from './components/PascualProject';
+import BlackSheepProject from './components/BlackSheepProject';
 import FloatingEmailButton from './components/FloatingEmailButton';
 
 // Componente para resetear el scroll automáticamente al cambiar de ruta
@@ -112,7 +113,7 @@ function App() {
                     { id: '02', role: 'UX/UI DESIGN', title: 'GE Appliances', desc: "Visual redesign for brand's digital experience...", img: '/GE_1600X1000.webp', alt: 'GE', to: '/work/ge' },
                     { id: '03', role: 'UI DESIGNER', title: 'CAFÉ Appliances', desc: 'Modern and elegant aesthetic that defines luxury...', img: '/cafe_1600X1000.webp', alt: 'Café', to: '/work/cafe' },
                     { id: '04', role: 'UX RESEARCHER & UX/UI DESIGNER', title: 'Pascual', desc: 'UX/UI design and development for the B2B platform...', img: '/pascual_1600X1000.webp', alt: 'Pascual', to: '/work/pascual' },
-                    { id: '05', role: 'PRODUCT DESIGNER · CONCEPT', title: 'Black Sheep', desc: 'Tattoo artist matching app: reveal your style, then book the artist who specializes in it.', img: '/blacksheep_1600X1000.webp', alt: 'Black Sheep app screens showing artist matches and session booking', to: null },
+                    { id: '05', role: 'PRODUCT DESIGNER · CONCEPT', title: 'Black Sheep', desc: 'Tattoo artist matching app: reveal your style, then book the artist who specializes in it.', img: '/blacksheep_1600X1000.webp', alt: 'Black Sheep app screens showing artist matches and session booking', to: '/work/blacksheep' },
                     { id: '06', role: 'UX AUDIT & REDESIGN', title: 'gogolf', desc: 'Removing friction from sign-up and tee-time booking for Mexico’s first golf marketplace.', img: '/gogolf_1600X1000.webp', alt: 'gogolf landing page redesign with tee-time search', to: null },
                     { id: '07', role: 'PRODUCT & BRAND DESIGNER · ASSESSMENT', title: 'Flex Academy', desc: 'One landing page, two audiences, one lead: a webinar for 9-to-5 leavers and a strategy call for operators.', img: '/flex_1600X1000.webp', alt: 'Flex Academy Launch playbook section with five steps and an apartment photo', to: null },
                     { id: '08', role: 'PRODUCT DESIGNER · CLIENT', title: 'Horacio Nansen', desc: 'Audit and redesign of a painter’s Canva site into a gallery-style online catalog.', img: '/horacio_1600X1000.webp', alt: 'Horacio Nansen catalog hero over a detail of one of his paintings', to: null },
@@ -395,6 +396,7 @@ function App() {
         <Route path="/work/ge" element={<GEProject />} />
         <Route path="/work/cafe" element={<CafeProject />} />
         <Route path="/work/pascual" element={<PascualProject />} />
+        <Route path="/work/blacksheep" element={<BlackSheepProject />} />
       </Routes>
 
       {/*<BackToTop /> Aqui esta global*/}
